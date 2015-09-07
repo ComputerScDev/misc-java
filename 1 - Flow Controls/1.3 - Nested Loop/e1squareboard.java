@@ -5,7 +5,7 @@
 //
 // Conditions: only use two output statements.
 //
-public class s1p3e1_squareboard {
+public class e1squareboard {
 	public static void main(String[] args) {
 		int size = 5;
 		for (int row = 1; row<=5; row++) {

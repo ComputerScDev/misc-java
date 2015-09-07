@@ -5,7 +5,7 @@
 It prints "Coza" in place of multiples of 3, "Loza" for multiples of 5,
 and "Woza" for multiples of 7. "CozaLoza" for multiples of 3 and 5, and so on. */
 
-/* public class s1p2e5_tfs {
+/* public class e5tfs {
 	public static void main(String[] args) {
 		int lowerbound = 1;
 		int upperbound = 110;
@@ -48,7 +48,7 @@ and "Woza" for multiples of 7. "CozaLoza" for multiples of 3 and 5, and so on. *
 // Note: write out the T-F decision tree for each case, and work
 // with the visual aid.
 
-public class s1p2e5_tfs {
+public class e5tfs {
 	public static void main(String[] args) {
 		int lowerbound = 1;
 		int upperbound = 110;

@@ -1,7 +1,7 @@
 // Exercises on Loops (Iteration). 3 - Harmonic Sum
 //
 // 
-public class s1p2e3_harmonicsum {
+public class e3harmonicsum {
 	public static void main(String[] args) {
 		int maxDenominator = 50000;
 		double sumL2R = 0.0;

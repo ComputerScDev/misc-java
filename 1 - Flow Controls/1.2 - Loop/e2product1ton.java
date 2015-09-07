@@ -2,7 +2,7 @@
 //
 // essentially a factorial class.
 
-public class s1p2e2_product1ton {
+public class e2product1ton {
 	public static void main(String[] args) {
 		int lowerbound = 1; // from i = 1
 		int upperbound = 10; // to i = k == 10.

@@ -3,7 +3,7 @@
 // we compute the value of pi using the series expansion:
 // pi = 4(1-(1/3+(1/5)-(1/7)+...)))
 
-public class s1p2e4_computepi {
+public class e4computepi {
 	public static void main(String[] args) {
 		double sum = 0;
 		int maxDenom = 10000000;

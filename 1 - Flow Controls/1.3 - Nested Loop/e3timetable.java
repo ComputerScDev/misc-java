@@ -15,7 +15,7 @@ Output should mimic:
  9 |  9 18 27 36 45 54 63 72 81 */
 // next, do the 1-to-12 product table.
 
-public class s1p3e3_timetable {
+public class e3timetable {
 	public static void main(String[] args) {
 		int size = 9;
 		for (int row = 1; row<=size+2;++row) {
@@ -55,7 +55,7 @@ public class s1p3e3_timetable {
 
 // below is code for size = 12.
 
-/* public class s1p3e3_timetable {
+/* public class e3timetable {
 	public static void main(String[] args) {
 		int size = 12;
 		for (int row = 1; row<=size+2;++row) {

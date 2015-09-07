@@ -2,7 +2,7 @@
 //
 // compute the first 20 fibonacci numbers, and find their average
 
-public class s1p2e6_fibonacci {
+public class e6fibonacci {
 	public static void main(String[] args) {
 		int n = 3;
 		int fn;

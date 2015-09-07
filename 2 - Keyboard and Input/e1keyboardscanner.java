@@ -4,7 +4,7 @@
 // and a string. 
 
 import java.util.Scanner;
-public class s2e1_keyboardscanner {
+public class e1keyboardscanner {
 	public static void main(String[] args) {
 		int num1;
 		double num2;

@@ -1,6 +1,6 @@
 // Exercises on Loops (Iteration). 7 - Extract and Reverse Digits
 //
-public class s1p2e7_extract {
+public class e7extract {
 	public static void main(String[] args) {
 		int n = 1542;
 		while (n>0) {

@@ -5,7 +5,7 @@
 //
 // Conditions: only use three output statements, each only once.
 //
-public class s1p3e2_checkerboard {
+public class e2checkerboard {
 	public static void main(String[] args) {
 		int size = 7; // size of board.
 		for (int row = 1; row<=7; row++) {

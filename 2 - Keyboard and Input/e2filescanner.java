@@ -2,7 +2,7 @@ import java.util.Scanner; // need to use scanner for input
 import java.io.File; // need to use file
 import java.io.FileNotFoundException; // need for file operation
 
-public class s2e2_filescanner {
+public class e2filescanner {
 	public static void main(String[] args) throws FileNotFoundException {
 		int num1;
 		double num2;

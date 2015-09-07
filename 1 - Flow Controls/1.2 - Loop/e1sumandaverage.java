@@ -4,7 +4,7 @@
 // of 1, 2, 3, ..., to an upperbound (e.g., 100). 
 // Also compute and display the average.
 
-public class s1p2e1_sumandaverage {
+public class e1sumandaverage {
 	public static void main(String[] args) {
 		int sum = 0;
 		double average;

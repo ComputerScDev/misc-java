@@ -1,6 +1,6 @@
 // Exercises on Conditionals(Decision). 3 - Print Number in Words (nested-if vs. switch)
 //
-public class s1p1e3_printnumberinword {
+public class e3printnumberinword {
   public static void main(String[] args) {
     int number = 5;
     // nested-if
