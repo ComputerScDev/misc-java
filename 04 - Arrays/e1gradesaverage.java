@@ -9,8 +9,8 @@ class e1gradesaverage {
 	
 	public int computeAverage(int[] grades, int numStudents) {
 		int sum = 0;
-		for (int i=0;i<=numStudents-1;i++) {
-			sum+=grades[i];
+		for (int grade : grades) { // for each int grade in int[] grades
+			sum+=grade;
 		} return sum/numStudents;
 	}
 	
