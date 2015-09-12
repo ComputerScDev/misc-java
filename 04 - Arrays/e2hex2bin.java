@@ -54,10 +54,50 @@ class e2hex2bin {
 	public static void main(String[] args) {
 		e2hex2bin im = new e2hex2bin();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Enter a Hexadecimal string: ");
+		System.out.print("Enter a Hexadecimal string: ");
 		String input = in.nextLine().toLowerCase();
 		System.out.println("The equivalent binary for hexadecimal '"
 		+input+"' is "+im.convertHextoBinary(input));
 	}
 	
 }
+
+// Alternate code:
+
+/* class e2hex2bin {
+	
+	public static void main(String[] args) {
+		String hexString; // input hex string
+		int hexStringLength; // length of hex string
+		String binaryString = ""; // equivalent binary string
+		
+		// binary string corresponding to hex '0' to 'F'
+		String[] binaryStrings = {"0000", "0001", "0010", "0011", "0100", "0101", "0110",
+		"0111", "1000", "1001", "1010", "1011", "1100", "1101", "1110", "1111"};
+		
+		// read input
+		Scanner in = new Scanner(System.in);
+		System.out.print("Enter a Hexadecimal string: ");
+		hexString = in.next();
+		hexStringLength = hexString.length();
+		
+		// Process the string from the left
+		
+		for (int pos = 0; pos<hexStringLength;++pos) {
+			char hexChar = hexString.charAt(pos);
+			if (hexChar >= '0' && hexChar <= '9') {
+				binaryString+=binaryStrings[hexChar-'0'];
+			} else if (hexChar >= 'a' && hexChar <='f') {
+				binaryString+=binaryStrings[hexChar-'a'+10];
+			} else if (hexChar >= 'A' && hexChar <= 'F') {
+				binaryString+=binaryStrings[hexChar-'A'+10];
+			} else {
+				System.err.println("Error: Invalid Hex String \""+hexString+"\"");
+				System.exit(1); //quit
+			}
+		}
+		System.out.println("The equivalent binary for \""+hexString
+		+"\" is \""+binaryString+"\"");
+	}
+	
+} */
