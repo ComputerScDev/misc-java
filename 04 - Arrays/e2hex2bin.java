@@ -10,42 +10,41 @@ class e2hex2bin {
 	"0110", "0111", "1000", "1001", "1010", "1011", "1100", "1101", " 1110", "1111"};
 	
 	public String convertHextoBinary(String input) {
-		e2hex2bin im = new e2hex2bin();
 		int length = input.length();
 		String result = "";
 		for (int i=0;i<=length-1;i++) {
 			switch(input.charAt(i)) {
-				case '0': result+=(im.hexBits[0]+" ");
+				case '0': result+=(hexBits[0]+" ");
 						break;
-				case '1': result+=(im.hexBits[1]+" ");
+				case '1': result+=(hexBits[1]+" ");
 						break;
-				case '2': result+=(im.hexBits[2]+" ");
+				case '2': result+=(hexBits[2]+" ");
 						break;
-				case '3': result+=(im.hexBits[3]+" ");
+				case '3': result+=(hexBits[3]+" ");
 						break;
-				case '4': result+=(im.hexBits[4]+" ");
+				case '4': result+=(hexBits[4]+" ");
 						break;
-				case '5': result+=(im.hexBits[5]+" ");
+				case '5': result+=(hexBits[5]+" ");
 						break;
-				case '6': result+=(im.hexBits[6]+" ");
+				case '6': result+=(hexBits[6]+" ");
 						break;
-				case '7': result+=(im.hexBits[7]+" ");
+				case '7': result+=(hexBits[7]+" ");
 						break;
-				case '8': result+=(im.hexBits[8]+" ");
+				case '8': result+=(hexBits[8]+" ");
 						break;
-				case '9': result+=(im.hexBits[9]+" ");
+				case '9': result+=(hexBits[9]+" ");
 						break;
-				case 'a': result+=(im.hexBits[10]+" ");
+				case 'a': result+=(hexBits[10]+" ");
 						break;
-				case 'b': result+=(im.hexBits[11]+" ");
+				case 'b': result+=(hexBits[11]+" ");
 						break;
-				case 'c': result+=(im.hexBits[12]+" ");
+				case 'c': result+=(hexBits[12]+" ");
 						break;
-				case 'd': result+=(im.hexBits[13]+" ");
+				case 'd': result+=(hexBits[13]+" ");
 						break;
-				case 'e': result+=(im.hexBits[14]+" ");
+				case 'e': result+=(hexBits[14]+" ");
 						break;
-				case 'f': result+=(im.hexBits[15]+" ");
+				case 'f': result+=(hexBits[15]+" ");
 						break;
 			}
 		} return result;
