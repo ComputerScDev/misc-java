@@ -7,8 +7,9 @@ import java.util.Scanner;
 
 class e1gradestatistics {
 	
-	public static int[] grades;
+	public static int[] grades; // static field
 	
+	// static methods below, to access the static field above.
 	
 	public static double average() {
 		if (grades.length == 0) {
