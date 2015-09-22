@@ -228,7 +228,7 @@ class e1matrix {
 		} else {
 			System.out.println();
 			System.out.println("Invalid dimensions for sums and differences.");
-			System.out.println("Both matrices must have equal dimensions");
+			System.out.println("Both matrices must have equal dimensions.");
 			System.out.println();
 		}
 		if (matrix1[0].length == matrix2.length) {
@@ -247,7 +247,7 @@ class e1matrix {
 			}
 		} else {
 			System.out.println("Invalid dimensions for matrix multiplication.");
-			System.out.println("Matrix 1 column dimension must equal Matrix 2 row dimension");
+			System.out.println("Matrix 1 column dimension must equal Matrix 2 row dimension.");
 		}
 	}
 	
