@@ -216,7 +216,22 @@ class e3printpatterns {
 	}
 	
 	public static void printPatternQ(int size) {
-		
+		for	(int i=size-1; i>=0; i--) {
+			int k=0;
+			for (int j=0; j<size; j++) {
+				System.out.print((j>i-1 ? (k+1)+" ": "  "));
+				if (j>i-1) {
+					k++;
+				}
+			}
+			for (int l=size-1; l>=0; l--) {
+				System.out.print((l>i ? (k-1)+" ": "  "));
+				if (l>i-1) {
+					k--;
+				}
+			}
+			System.out.println();
+		}
 	}
 	
 	public static void printPatternR(int size) {
@@ -273,6 +288,8 @@ class e3printpatterns {
 		im.printPatternO(size);
 		System.out.println();
 		im.printPatternP(size);
+		System.out.println();
+		im.printPatternQ(size);
 	}
 	
 }
