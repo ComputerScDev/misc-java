@@ -235,9 +235,20 @@ class e3printpatterns {
 	}
 	
 	public static void printPatternR(int size) {
-		
+		for	(int i=0; i<size+1; i++) {
+			int k=1;
+			for (int j=0; j<size; j++) {
+				System.out.print((j>=i ? (k-i)+" ": "  "));
+				k++;
+			}
+			for (int l = size-1; l>=0; l--) {
+				System.out.print((i<l ? (k-(i+2))+" ": "  "));
+				k--;
+			}
+			System.out.println();
+		}
 	}
-	
+
 	public static void printPatternS(int size) {
 		
 	}
@@ -290,6 +301,8 @@ class e3printpatterns {
 		im.printPatternP(size);
 		System.out.println();
 		im.printPatternQ(size);
+		System.out.println();
+		im.printPatternR(size);
 	}
 	
 }
@@ -297,18 +310,6 @@ class e3printpatterns {
 Write a method to print each of the followings patterns using 
 nested loops in a class called PrintPatterns.
 
-
-
-   
-              1                    1 2 3 4 5 6 7 8 7 6 5 4 3 2 1
-            1 2 1                    1 2 3 4 5 6 7 6 5 4 3 2 1
-          1 2 3 2 1                    1 2 3 4 5 6 5 4 3 2 1
-        1 2 3 4 3 2 1                    1 2 3 4 5 4 3 2 1
-      1 2 3 4 5 4 3 2 1                    1 2 3 4 3 2 1
-    1 2 3 4 5 6 5 4 3 2 1                    1 2 3 2 1
-  1 2 3 4 5 6 7 6 5 4 3 2 1                    1 2 1
-1 2 3 4 5 6 7 8 7 6 5 4 3 2 1                    1
-             (q)                                (r)
    
 1                           1      1 2 3 4 5 6 7 8 7 6 5 4 3 2 1
 1 2                       2 1      1 2 3 4 5 6 7   7 6 5 4 3 2 1
