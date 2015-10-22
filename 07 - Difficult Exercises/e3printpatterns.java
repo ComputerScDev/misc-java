@@ -2,51 +2,38 @@ import java.util.Scanner;
 
 class e3printpatterns {
 	
-	public static void printPatternA(int size) 
-	{
-		for	(int i=0; i<size+1; i++) 
-		{
-			for (int j=0; j<i; j++) 
-			{
+	public static void printPatternA(int size) {
+		for	(int i=0; i<size+1; i++) {
+			for (int j=0; j<i; j++) {
 				System.out.print("# ");
 			}
 			System.out.println();
 		}
 	}
 	
-	public static void printPatternB(int size) 
-	{
-		for	(int i=size-1; i>=0; i--) 
-		{
-			for (int j=0; j<i+1; j++) 
-			{
+	public static void printPatternB(int size) {
+		for	(int i=size-1; i>=0; i--) {
+			for (int j=0; j<i+1; j++) {
 				System.out.print("# ");
 			}
 			System.out.println();
 		}
 	}
 	
-	public static void printPatternC(int size) 
-	{
-		for	(int i=0; i<size+1; i++) 
-		{
-			for (int j=0; j<size; j++) 
-			{
+	public static void printPatternC(int size) {
+		for	(int i=0; i<size+1; i++) {
+			for (int j=0; j<size; j++) {
 				System.out.print((j>=i? "# ": "  "));
 			}
-			if (i<size) 
-			{
+			if (i<size) {
 				System.out.println();
 			}
 		}
 	}
 	
-	public static void printPatternD(int size) 
-	{
-		for	(int i=size-1; i>=0; i--) 
-		{
-			for (int j=0; j<size; j++) 
-			{
+	public static void printPatternD(int size) {
+		for	(int i=size-1; i>=0; i--) {
+			for (int j=0; j<size; j++) {
 				System.out.print((j>i-1 ? "# ": "  "));
 			}
 			System.out.println();
@@ -54,24 +41,17 @@ class e3printpatterns {
 	}
 	
 	public static void printPatternE(int size) {
-		for	(int i=0; i<size; i++) 
-		{
-			for (int j=0; j<size; j++) 
-			{
-				if (i == 0) 
-				{
+		for	(int i=0; i<size; i++) {
+			for (int j=0; j<size; j++) {
+				if (i == 0) {
 					System.out.print(" #");
-				} else if (i == size-1) 
-				{
+				} else if (i == size-1) {
 					System.out.print(" #");
-				} else if (j == 0) 
-				{
+				} else if (j == 0) {
 					System.out.print(" #");
-				} else if (j == size-1) 
-				{
+				} else if (j == size-1) {
 					System.out.print(" #");
-				} else 
-				{
+				} else {
 					System.out.print("  ");
 				}
 			}
@@ -80,21 +60,15 @@ class e3printpatterns {
 	}
 	
 	public static void printPatternF(int size) {
-		for	(int i=0; i<size; i++) 
-		{
-			for (int j=0; j<size; j++) 
-			{
-				if (i == 0) 
-				{
+		for	(int i=0; i<size; i++) {
+			for (int j=0; j<size; j++) {
+				if (i == 0) {
 					System.out.print(" #");
-				} else if (i == size-1) 
-				{
+				} else if (i == size-1) {
 					System.out.print(" #");
-				} else if (j == i) 
-				{
+				} else if (j == i) {
 					System.out.print(" #");
-				} else 
-				{
+				} else {
 					System.out.print("  ");
 				}
 			}
@@ -103,21 +77,15 @@ class e3printpatterns {
 	}
 	
 	public static void printPatternG(int size) {
-		for	(int i=0; i<size; i++) 
-		{
-			for (int j=0; j<size; j++) 
-			{
-				if (i == 0) 
-				{
+		for	(int i=0; i<size; i++) {
+			for (int j=0; j<size; j++) {
+				if (i == 0) {
 					System.out.print(" #");
-				} else if (i == size-1) 
-				{
+				} else if (i == size-1) {
 					System.out.print(" #");
-				} else if (j == size-i-1) 
-				{
+				} else if (j == size-i-1) {
 					System.out.print(" #");
-				} else 
-				{
+				} else {
 					System.out.print("  ");
 				}
 			}
@@ -126,21 +94,15 @@ class e3printpatterns {
 	}
 	
 	public static void printPatternH(int size) {
-		for	(int i=0; i<size; i++) 
-		{
-			for (int j=0; j<size; j++) 
-			{
-				if (i == 0) 
-				{
+		for	(int i=0; i<size; i++) {
+			for (int j=0; j<size; j++) {
+				if (i == 0) {
 					System.out.print(" #");
-				} else if (i == size-1) 
-				{
+				} else if (i == size-1) {
 					System.out.print(" #");
-				} else if ((j == size-i-1)||(j == i)) 
-				{
+				} else if ((j == size-i-1)||(j == i)) {
 					System.out.print(" #");
-				} else 
-				{
+				} else {
 					System.out.print("  ");
 				}
 			}
@@ -149,27 +111,19 @@ class e3printpatterns {
 	}
 	
 	public static void printPatternI(int size) {
-		for	(int i=0; i<size; i++) 
-		{
-			for (int j=0; j<size; j++) 
-			{
-				if (i == 0) 
-				{
+		for	(int i=0; i<size; i++) {
+			for (int j=0; j<size; j++) {
+				if (i == 0) {
 					System.out.print(" #");
-				} else if (i == size-1) 
-				{
+				} else if (i == size-1) {
 					System.out.print(" #");
-				} else if ((j == size-i-1)||(j == i)) 
-				{
+				} else if ((j == size-i-1)||(j == i)) {
 					System.out.print(" #");
-				} else if (j == 0) 
-				{
+				} else if (j == 0) {
 					System.out.print(" #");
-				} else if (j == size-1) 
-				{
+				} else if (j == size-1) {
 					System.out.print(" #");
-				} else 
-				{
+				} else {
 					System.out.print("  ");
 				}
 			}
@@ -177,110 +131,82 @@ class e3printpatterns {
 		}
 	}
 	
-	public static void printPatternJ(int size) 
-	{
-		for	(int i=0; i<size+3; i++) 
-		{
-			for (int j=0; j<size+3; j++) 
-			{
+	public static void printPatternJ(int size) {
+		for	(int i=0; i<size+3; i++) {
+			for (int j=0; j<size+3; j++) {
 				System.out.print((j>2*i-1 ? "# " : " "));
 			}
-			if (i<size) 
-			{
-				System.out.println();
-			}
-		}
-		
-	}
-	
-	public static void printPatternK(int size) 
-	{
-		for	(int i=size+3; i>0; i--) 
-		{
-			for (int j=0; j<=size+3; j++) 
-			{
-				System.out.print((j>=2*i-1 ? "# " : " "));
-			}
-			if (i<size+3) 
-			{
+			if (i<size) {
 				System.out.println();
 			}
 		}
 	}
 	
-	public static void printPatternL(int size) 
-	{
+	public static void printPatternK(int size) {
 		for	(int i=size+3; i>0; i--) {
-			for (int j=0; j<=size+3; j++) 
-			{
+			for (int j=0; j<=size+3; j++) {
 				System.out.print((j>=2*i-1 ? "# " : " "));
 			}
-			if (i<size+3) 
-			{
+			if (i<size+3) {
 				System.out.println();
 			}
 		}
-		for	(int i=1; i<size+2; i++) 
-		{
-			for (int j=0; j<=size+2; j++) 
-			{
+	}
+	
+	public static void printPatternL(int size) {
+		for	(int i=size+3; i>0; i--) {
+			for (int j=0; j<=size+3; j++) {
+				System.out.print((j>=2*i-1 ? "# " : " "));
+			}
+			if (i<size+3) {
+				System.out.println();
+			}
+		}
+		for	(int i=1; i<size+2; i++) {
+			for (int j=0; j<=size+2; j++) {
 				System.out.print((j>2*i-1 ? " #" : " "));
 			}
-			if (i<size-1) 
-			{
+			if (i<size-1) {
 				System.out.println();
 			}
 		}
 	}
 	
-	public static void printPatternM(int size) 
-	{
-		for	(int i=0; i<size+1; i++) 
-		{
-			for (int j=0; j<i; j++) 
-			{
+	public static void printPatternM(int size) {
+		for	(int i=0; i<size+1; i++) {
+			for (int j=0; j<i; j++) {
 				System.out.print((j+1)+" ");
 			}
 			System.out.println();
 		}
 	}
 	
-	public static void printPatternN(int size) 
-	{
-		for	(int i=0; i<size+1; i++) 
-		{
+	public static void printPatternN(int size) {
+		for	(int i=0; i<size+1; i++) {
 			int k=1;
-			for (int j=0; j<size; j++) 
-			{
+			for (int j=0; j<size; j++) {
 				System.out.print((j>=i? (k-i)+" ": "  "));
 				k++;
 			}
-			if (i<size) 
-			{
+			if (i<size) {
 				System.out.println();
 			}
 		}
 	}
 	
-	public static void printPatternO(int size) 
-	{
-		for	(int i=size-1; i>=0; i--) 
-		{
-			for (int j=0; j<size; j++) 
-			{
+	public static void printPatternO(int size) {
+		for	(int i=size-1; i>=0; i--) {
+			for (int j=0; j<size; j++) {
 				System.out.print((j>i-1 ? (size-j)+" ": "  "));
 			}
 			System.out.println();
 		}
 	}
 	
-	public static void printPatternP(int size) 
-	{
-		for	(int i=size-1; i>=0; i--) 
-		{
+	public static void printPatternP(int size) {
+		for	(int i=size-1; i>=0; i--) {
 			int k=i;
-			for (int j=0; j<i+1; j++) 
-			{
+			for (int j=0; j<i+1; j++) {
 				System.out.print(k+1+" ");
 				k--;
 			}
@@ -288,24 +214,18 @@ class e3printpatterns {
 		}
 	}
 	
-	public static void printPatternQ(int size) 
-	{
-		for	(int i=size-1; i>=0; i--) 
-		{
+	public static void printPatternQ(int size) {
+		for	(int i=size-1; i>=0; i--) {
 			int k=0;
-			for (int j=0; j<size; j++) 
-			{
+			for (int j=0; j<size; j++) {
 				System.out.print((j>i-1 ? (k+1)+" ": "  "));
-				if (j>i-1) 
-				{
+				if (j>i-1) {
 					k++;
 				}
 			}
-			for (int l=size-1; l>=0; l--) 
-			{
+			for (int l=size-1; l>=0; l--) {
 				System.out.print((l>i ? (k-1)+" ": "  "));
-				if (l>i-1) 
-				{
+				if (l>i-1) {
 					k--;
 				}
 			}
@@ -314,16 +234,13 @@ class e3printpatterns {
 	}
 	
 	public static void printPatternR(int size) {
-		for	(int i=0; i<size+1; i++) 
-		{
+		for	(int i=0; i<size+1; i++) {
 			int k=1;
-			for (int j=0; j<size; j++) 
-			{
+			for (int j=0; j<size; j++) {
 				System.out.print((j>=i ? (k-i)+" ": "  "));
 				k++;
 			}
-			for (int l = size-1; l>=0; l--) 
-			{
+			for (int l = size-1; l>=0; l--) {
 				System.out.print((i<l ? (k-(i+2))+" ": "  "));
 				k--;
 			}
@@ -331,17 +248,13 @@ class e3printpatterns {
 		}
 	}
 
-	public static void printPatternS(int size) 
-	{
-		for	(int i=0; i<size+1; i++) 
-		{
-			for (int j=0; j<i; j++) 
-			{
+	public static void printPatternS(int size) {
+		for	(int i=0; i<size+1; i++) {
+			for (int j=0; j<i; j++) {
 				System.out.print((j+1)+" ");
 			}
 			int k=size-1;
-			for (int l=size-1; l>=0; l--) 
-			{
+			for (int l=size-1; l>=0; l--) {
 				System.out.print((i>l ? (i<k ? "a": "  ") : "  "));
 				k--;
 			}
