@@ -47,5 +47,4 @@ public class LetterGradeFn {
 		} while (!valid);
 		return num;
 	}
-	
 }
