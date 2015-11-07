@@ -16,5 +16,4 @@ class CountNumber {
 		
 		System.out.println(spaceCount+1);
 	}
-	
 }

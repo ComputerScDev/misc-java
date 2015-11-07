@@ -42,5 +42,4 @@ public class Distance {
 		} while (!valid);
 		return x;
 	} 
-	
 }
