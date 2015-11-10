@@ -37,4 +37,6 @@ public class AddAbsValFnV2 {
 		}
 		return sum;
 	}
+	// note that the method 'addAbsVal' is overloaded
+	// so we only require one function call for many scenarios
 }
