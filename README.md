@@ -1,6 +1,8 @@
 # exercises-exec
-miscellaneous Java code.
+Miscellaneous Java code (beginner to intermediate level).
 
-maybe one day I'll understand this newfangled 'technology' thing.
+exercises from: 
 
-exercises from: www3.ntu.edu.sg/home/ehchua/programming/.
+www3.ntu.edu.sg/home/ehchua/programming/
+
+morlab.mie.utoronto.ca/MIE250/
