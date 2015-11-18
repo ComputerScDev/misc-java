@@ -1,3 +1,5 @@
+import java.io.*;
+
 public class LuckySevens_OOP {
 	
 	public static void main(String[] args) {
@@ -6,7 +8,6 @@ public class LuckySevens_OOP {
 		LuckySevens game = new LuckySevens(startingCash);
 		
 		game.play();
-		game.summarize();
 		game.checkFairness();
 		
 	} // end main
@@ -21,6 +22,7 @@ public class LuckySevens_OOP {
 		do {
 			valid = true;
 			System.out.print("Enter starting amount of cash (or \"quit\" to quit): ");
+			System.out.println();
 			try {
 				input = cin.readLine();
 				if (input.equals("quit")) {

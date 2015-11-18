@@ -11,12 +11,12 @@ public class LuckySevens {
 	private int[] rollFreq = new int[13];	// frequency of roll values
 	private boolean doSuppressOutput;		// whether or not to suppress output
 	
-	// void constructor
+/* 	// void constructor
 	public LuckySevens() {
 		this.setBasicGameValues();
 		this.reset();
 		this.startingCash = 0;
-	}
+	} */
 	
 	// constructor to initialize starting cash value
 	public LuckySevens(int startingCash) {
@@ -30,10 +30,10 @@ public class LuckySevens {
 		return this.winValue;
 	}
 	public int getLoseValue() {
-		return this.loseValue();
+		return this.loseValue;
 	}
 	public int getStartingCash() {
-		return this.startingCash();
+		return this.startingCash;
 	}
 	public int getNRolls() {
 		return this.nRolls;
@@ -42,7 +42,7 @@ public class LuckySevens {
 		return this.maxCash;
 	}
 	public int[] getRollFreq() {
-		return this.rollFreq
+		return this.rollFreq;
 	}
 	public boolean outputSuppressed() {
 		return this.doSuppressOutput;
@@ -82,8 +82,9 @@ public class LuckySevens {
 	public void reset() {
 		this.nRolls = 0;
 		this.maxCash = 0;
-		for (int i = 0; i < this.rollFreq.length; i++) 
+		for (int i = 0; i < this.rollFreq.length; i++) {
 			this.rollFreq[i] = 0;
+		}
 	}
 	
 	// play Lucky Sevens with a starting amount of money
@@ -100,17 +101,18 @@ public class LuckySevens {
 			cash += (rollValue == 7) ? this.winValue : this.loseValue;
 			String outcome = (rollValue == 7) ? "WIN" : "lose";
 			
-			if (cash > this.maxCash)
+			if (cash > this.maxCash) {
 				this.maxCash = cash;
-		
+			}
 			this.nRolls++;
-			
-			if (!this.outputSupressed())
-				System.out.format("\tRoll %3d: %2d  %4s -> $%d\n", nRolls, rollValue, outcome, cash);
+			if (!this.outputSuppressed()) {
+				System.out.format("\tRoll %3d : %2d %4s -> $%d\n", nRolls, rollValue, outcome, cash);
+			}
 		}
 		
-		if (!this.outputSupressed())
+		if (!this.outputSuppressed()) {
 			this.summarize();
+		}
 		
 	} // end play()
 	
@@ -121,9 +123,7 @@ public class LuckySevens {
 	
 	// summarize outcome
 	public void summarize() {
-		System.out.println("\nYou start with $" + this.startingCash + ".\n"
-						   + "You peak at $" + this.maxCash + ".\n"
-						   + "After " + this.nRolls + " rolls, you run out of cash.\n");
+		System.out.println("\nYou start with $" + this.startingCash + ".\n" + "You peak at $" + this.maxCash + ".\n" + "After " + this.nRolls + " rolls, you run out of cash.\n");
 	} // end summarize()
 	
 	// check the fairness of the dice roll distribution
@@ -134,7 +134,7 @@ public class LuckySevens {
 			System.out.println("Was it fair? Roll distribution:\n");
 			printHistogram();
 			if (fair) {
-					System.out.println("\nFair at 95% significance level!\n");
+				System.out.println("\nFair at 95% significance level!\n");
 			}
 			else {
 				System.out.println("\nUnfair at 95% significance level!\n");
@@ -160,13 +160,15 @@ public class LuckySevens {
 		}
 		
 		// print axis
-		for (int i = 0; i < 13; i++)
+		for (int i = 0; i < 13; i++) {
 			System.out.print("---");
+		}
 		System.out.println();
 		
 		// print x tick marks
-		for (int i = 0; i < 13; i++)
+		for (int i = 0; i < 13; i++) {
 			System.out.format("%3d", i);
+		}
 		System.out.println();
 	} // end printHistogram()
 	
@@ -181,13 +183,15 @@ public class LuckySevens {
 		
 		// turn sample counts into percentage frequencies
 		int [] expFreq = new int[13];
-		for (int i = 2; i <= 12; i++) 
+		for (int i = 2; i <= 12; i++) {
 			expFreq[i] = (int)Math.round(expDist[i]*nSamples);
+		}
 		
 		// Chi-Square statistic
 		double testStat = 0.;
-		for (int i = 2; i <= 12; i++) 
+		for (int i = 2; i <= 12; i++) {
 			testStat += Math.pow(this.rollFreq[i]-expFreq[i], 2)/expFreq[i];
+		}
 		
 		// reject H0 if testStat > critVal
 		return (testStat <= critVal);
@@ -198,8 +202,9 @@ public class LuckySevens {
 	public int arrayMax(int [] x) {
 		int maxVal = x[0];
 		for (int val : x) {
-			if (val > maxVal)
+			if (val > maxVal) {
 				maxVal = val;
+			}
 		}
 		return maxVal;
 	} // end max()
