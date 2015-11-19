@@ -254,8 +254,8 @@ class e3printpatterns {
 				System.out.print((j+1)+" ");
 			}
 			int k=size-1;
-			for (int l=size-1; l>=0; l--) {
-				System.out.print((i>l ? (i<k ? "a": "  ") : "  "));
+			for (int l=size-1; l<i; l--) {
+				System.out.print((l-1)+" ");
 				k--;
 			}
 			System.out.println();
