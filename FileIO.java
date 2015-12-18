@@ -23,5 +23,4 @@ public class FileIO {
 		} while (line != null);
 		fin.close();
 	}
-	
 }
