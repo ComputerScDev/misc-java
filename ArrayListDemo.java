@@ -22,6 +22,7 @@ public class ArrayListDemo {
 		for (int i = 0; i < x.size(); i++) {
 			sum += x.get(i); // or x[i]
 		}
+		
 		System.out.println("Sum = " + sum);
 		System.out.println();
 		
@@ -48,5 +49,6 @@ public class ArrayListDemo {
 		x2.set(0, 33);
 		print(x2, "H");
 		print(x, "I");
+		
 	}
 }
