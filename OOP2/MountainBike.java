@@ -16,6 +16,15 @@ public class MountainBike extends Bicycle {
 	public String getSuspension() { return this.suspension; }
 	public void setSuspension(String s) { this.suspension = s; }
 	
+	public boolean isGoodValue() {
+		if (this.trailRating > 2 && this.getPrice() < 400) {
+			return true;
+		}
+		return false;
+	}
+	// notice that we used the public method getPrice() from the Bicycle superclass
+	// to access the private field 'this.price'.
+	
 	@Override // indicates that this method overrides the superclass
 	public void rideTheMountain() {
 		System.out.println("All systems w/in normal operating parameters.");
