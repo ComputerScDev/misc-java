@@ -34,6 +34,7 @@ public class regex {
 				
 			} while (!strInput.equals("0"));
 		} // infinite loop
+		
 	} // end main
  } // end class
  
