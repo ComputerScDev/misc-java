@@ -1,9 +1,4 @@
 // bikes inheritance demo
-// output:
-// Popped a tire.
-// All systems w/in normal operating parameters.
-// Severe damage sustained.
-// 4 people stuck in a ditch.
 
 public class myBikes {
 	
