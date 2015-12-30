@@ -27,11 +27,3 @@ public class Functions {
 		return f / 2;
 	}
 }
-
-/* 
-output:
-1 3
-2 3
-6
-2 3 4 
-*/
