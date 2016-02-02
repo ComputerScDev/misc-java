@@ -8,15 +8,19 @@ public class BubbleSort {
 		for (int i = 0; i < array.length; i++) {
 			System.out.print(array[i] + " ");
 		}
+		
 		System.out.println("\n");
 	}
 	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
+		
 		System.out.println("Enter # of elements to sort: ");
 		int size = in.nextInt();
 		int[] array = new int[size];
+		
 		System.out.println("Input the elements: ");
+		
 		for (int i = 0; i < size; i++) {
 			System.out.println("Element #" + (i+1) + ":");
 			array[i] = in.nextInt();
@@ -34,6 +38,7 @@ public class BubbleSort {
 					array[j+1] = t;
 				}
 			}
+			
 			System.out.println("End of pass #" + (i+1) + ": ");
 			printArray(array);
 		}
@@ -42,5 +47,4 @@ public class BubbleSort {
 		System.out.println("Sorted set: ");
 		printArray(array);
 	}
-	
 }
