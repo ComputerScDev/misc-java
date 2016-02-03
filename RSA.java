@@ -22,7 +22,6 @@ class RSA {
 	}
 	
 	void generateKeys() {
-		
 		p = BigInteger.probablePrime(BIT_LENGTH, random);
 		q = BigInteger.probablePrime(BIT_LENGTH, random);
 		N = p.multiply(q);
@@ -32,19 +31,16 @@ class RSA {
 		while (phi.gcd(e).compareTo(BigInteger.ONE) >0 && e,compareTo(phi) < 0) {
 			e.add(BigInteger.ONE);
 		}
-		
 		d = e.modInverse.(phi);
 	}
 	
 	String getMessage() {
 		String message = null;
-		
 		try {
 			message = reader.readLine();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
 		return message;
 	}
 	
