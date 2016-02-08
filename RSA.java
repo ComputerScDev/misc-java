@@ -31,6 +31,7 @@ class RSA {
 		while (phi.gcd(e).compareTo(BigInteger.ONE) >0 && e,compareTo(phi) < 0) {
 			e.add(BigInteger.ONE);
 		}
+		
 		d = e.modInverse.(phi);
 	}
 	
@@ -41,6 +42,7 @@ class RSA {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 		return message;
 	}
 	
@@ -57,6 +59,7 @@ class RSA {
 		for (byte b : encrypted) {
 			s += Byte.toString(b);
 		}
+		
 		return s;
 	}
 	
