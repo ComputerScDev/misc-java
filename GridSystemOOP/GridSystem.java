@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+// Translate point [x]
+// Calculate distance from origin. [x]
+// Calculate distance between points.
+// Determine if a point is on a line.
+
 public class GridSystem {
 	
 	public static void main(String[] args) {
@@ -25,10 +30,4 @@ public class GridSystem {
 		System.out.print(p3 + " is closer.");
 		
 	}
-	
 }
-
-// Translate point [x]
-// Calculate distance from origin. [x]
-// Calculate distance between points.
-// Determine if a point is on a line.
