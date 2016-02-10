@@ -14,11 +14,9 @@ public class BubbleSort {
 	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		
 		System.out.println("Enter # of elements to sort: ");
 		int size = in.nextInt();
 		int[] array = new int[size];
-		
 		System.out.println("Input the elements: ");
 		
 		for (int i = 0; i < size; i++) {
