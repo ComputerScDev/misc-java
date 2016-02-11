@@ -11,13 +11,6 @@ public class LuckySevens {
 	private int[] rollFreq = new int[13];	// frequency of roll values
 	private boolean doSuppressOutput;		// whether or not to suppress output
 	
-/* 	// void constructor
-	public LuckySevens() {
-		this.setBasicGameValues();
-		this.reset();
-		this.startingCash = 0;
-	} */
-	
 	// constructor to initialize starting cash value
 	public LuckySevens(int startingCash) {
 		this.setBasicGameValues();
