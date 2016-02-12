@@ -3,13 +3,10 @@ import java.io.*;
 public class LuckySevens_OOP {
 	
 	public static void main(String[] args) {
-		
 		int startingCash = getUserStartingCash();
 		LuckySevens game = new LuckySevens(startingCash);
-		
 		game.play();
 		game.checkFairness();
-		
 	} // end main
 	
 	// get a +ve integer as starting cash
