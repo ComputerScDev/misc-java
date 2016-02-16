@@ -18,10 +18,9 @@ public class regex {
 				strInput = cin.readLine();
 				
 				if (!strInput.equals("0")) {
-					
 					Matcher matcher = pattern.matcher(strInput);
-					
 					boolean found = false;
+					
 					while (matcher.find()) {
 						System.out.format ("Found the text \"%s\" starting at " + "index %d and ending at index %d.\n",
 						matcher.group(), matcher.start(), matcher.end());
