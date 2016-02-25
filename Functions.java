@@ -18,8 +18,7 @@ public class Functions {
 	}
 	
 	public static int Y(int d, int e) {
-		d++;
-		e += 2;
+		d++; e += 2;
 		return Z(d) + Z(e);
 	}
 	
