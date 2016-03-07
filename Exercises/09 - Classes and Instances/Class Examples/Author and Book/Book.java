@@ -47,7 +47,7 @@ public class Book {
 		this.qtyInStock = qtyInStock;
 	}
 	
-	// public getters and setters
+	// public getters and setters for private variables
 	// getters
 	public String getName() {
 		return name;
