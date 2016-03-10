@@ -4,7 +4,7 @@
 public class TestBook {
 	
 	public static void main(String[] args) {
-		Author mark = new Author("M.D. Nunez", "mark@sdentertainment.ca", "m");
+		Author mark = new Author("M.D.", "mark@sdentertainment.ca", "m");
 		System.out.println(mark);	// toString()
 		
 		Book firstBook = new Book("Practical Logic (eBook)", mark, 4.99, 1000);
