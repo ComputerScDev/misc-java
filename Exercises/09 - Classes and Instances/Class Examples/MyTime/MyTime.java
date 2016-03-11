@@ -39,13 +39,14 @@ public class MyTime {
 		setTime(hour, minute, second);
 	}
 	
+	// public getters and setters for private variables
+	// main setter
 	void setTime(int hour, int minute, int second) {
 		setHour(hour);
 		setMinute(minute);
 		setSecond(second);
 	}
 	
-	// public getters and setters for private variables
 	// setters which validates input with exception handling
 	void setHour(int hour) {
 		if (hour >= 0 && hour <= 23) {
