@@ -15,10 +15,21 @@ public class Circle {
 		radius = r;
 		colour = "red";
 	}
+
+	// 3rd constructor, constructs a Circle instance with given radius and colour
+	public Circle(double r, String c) {
+		radius = r;
+		colour = c;
+	}
 	
 	// a public method for getting the radius value
 	public double getRadius() {
 		return radius;
+	}
+	
+	// a public method for getting the circle colour
+	public String getColour() {
+		return colour;
 	}
 	
 	// a public method for computing the circle's area
