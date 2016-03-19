@@ -6,30 +6,42 @@ public class Circle {
 	
 	// 1st constructor, which sets both radius & colour to default
 	public Circle() {
-		radius = 1.0;
-		colour = "red";
+		this.radius = 1.0;
+		this.colour = "red";
 	}
 	
 	// 2nd constructor, with given radius but colour default
-	public Circle(double r) {
-		radius = r;
-		colour = "red";
+	public Circle(double radius) {
+		this.radius = radius;
+		this.colour = "red";
 	}
 
 	// 3rd constructor, constructs a Circle instance with given radius and colour
-	public Circle(double r, String c) {
-		radius = r;
-		colour = c;
+	public Circle(double radius, String colour) {
+		this.radius = radius;
+		this.colour = colour;
 	}
 	
-	// a public method for getting the radius value
+	// Getters
+	// a public method for getting the radius value:
 	public double getRadius() {
 		return radius;
 	}
 	
-	// a public method for getting the circle colour
+	// a public method for getting the circle :
 	public String getColour() {
 		return colour;
+	}
+	
+	// Setters:
+	// a public setter for instance variable radius:
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+	
+	// a public setter for instance variable colour:
+	public void setColour(String colour) {
+		this.colour = colour;
 	}
 	
 	// a public method for computing the circle's area
@@ -39,5 +51,9 @@ public class Circle {
 	
 	public double getPerimeter() {
 		return 2*Math.PI*radius;
+	}
+	
+	public String toString() {
+		return "circle instance state: radius = " + this.radius + ", colour = " + this.colour + ".";
 	}
 }
