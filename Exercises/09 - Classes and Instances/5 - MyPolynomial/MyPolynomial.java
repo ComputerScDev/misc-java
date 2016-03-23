@@ -1,3 +1,7 @@
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+
 //	MyPolynomial model class
 //	-coeffs:double[]
 //	+MyPolynomial(coeffs:double...)
@@ -37,5 +41,18 @@ public class MyPolynomial {
 	public int getDegree() {
 		return this.coeffs.length - 1;
 	}
-		
+	
+	// helper method
+	private double[] getCoeffs() {
+		return coeffs;
+	}
+	
+	public String toString() {
+		StringBuilder string = new StringBuilder();
+		for (int i = this.getDegree(); i >= 0; i--) {
+			string.append(this.getCoeffs() + (i != 0 ? "x^" + i + " + " : ""));
+		}
+		return string.toString();
+	}
+	
 }
