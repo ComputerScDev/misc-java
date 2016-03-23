@@ -55,4 +55,16 @@ public class MyPolynomial {
 		return string.toString();
 	}
 	
+	//	+evaluate(x:double):double
+	public double evaluate(double x) {
+		double sum = 0.0;
+		for (int i = 0; i < this.getDegree() + 1; i++) {
+			sum += (i == 0 ? 1.0 : x)*this.getCoeffs()[i];
+		}
+		return sum;
+	}
+	
+	//	+add(another:MyPolynomial):MyPolynomial
+	//	+multiply(another:MyPolynomial):MyPolynomial
+	
 }
