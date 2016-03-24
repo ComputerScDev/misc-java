@@ -1,4 +1,4 @@
-// Book model class
+//	Book model class
 //	-name:String
 //	-author:Author
 //	-price:double
