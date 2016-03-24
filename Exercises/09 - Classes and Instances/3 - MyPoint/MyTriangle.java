@@ -1,4 +1,4 @@
-// MyTriangle model class
+//	MyTriangle model class
 //	-v1:MyPoint
 //	-v2:MyPoint
 //	-v3:MyPoint
