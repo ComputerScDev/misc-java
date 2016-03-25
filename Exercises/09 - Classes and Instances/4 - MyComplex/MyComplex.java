@@ -1,4 +1,4 @@
-// MyComplex model class
+//	MyComplex model class
 //	-re:double
 //	-im:double
 //	+MyComplex(re:double, im:double)
