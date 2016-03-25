@@ -65,6 +65,29 @@ public class MyPolynomial {
 	}
 	
 	//	+add(another:MyPolynomial):MyPolynomial
+	
+	public MyPolynomial add(MyPolynomial another) {
+		int degree1 = this.getDegree();
+		int degree2 = another.getDegree();
+		
+		if (degree2 > degree1) {
+			double[] newCoeffs = new double[degree2];
+		} else {
+			double[] newCoeffs = new double[degree1];
+		}
+		
+		double anotherCoeffs = another.getCoeffs();
+		
+		for (int i = 0; i < newCoeffs.length; i++) {
+			if (i > anotherCoeffs.length - 1) {
+				continue;
+			}
+			newCoeffs[i] = anotherCoeffs[i] + this.coeffs[i];
+		}
+		
+		return new MyPolynomial(newCoeffs);
+	}
+	
 	//	+multiply(another:MyPolynomial):MyPolynomial
 	
 }
