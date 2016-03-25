@@ -1,4 +1,4 @@
-// MyCircle model class
+//	MyCircle model class
 //	-centre:MyPoint
 //	-radius:int = 1
 //	+MyCircle(x:int, y:int, radius:int)

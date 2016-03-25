@@ -1,4 +1,4 @@
-// Author model class
+//	Author model class
 //	-name:String
 //	-email:String
 //	-gender:char
