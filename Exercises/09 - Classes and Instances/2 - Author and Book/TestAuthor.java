@@ -1,3 +1,5 @@
+// Test class for Author model class.
+
 public class TestAuthor {
 	
 	public static void main(String[] args) {
