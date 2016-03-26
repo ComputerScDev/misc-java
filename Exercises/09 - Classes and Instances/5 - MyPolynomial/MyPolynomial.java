@@ -50,7 +50,7 @@ public class MyPolynomial {
 	public String toString() {
 		StringBuilder string = new StringBuilder();
 		for (int i = this.getDegree(); i >= 0; i--) {
-			string.append(this.getCoeffs() + (i != 0 ? "x^" + i + " + " : ""));
+			string.append(this.coeffs[i] + (i != 0 ? "x^" + i + " + " : ""));
 		}
 		return string.toString();
 	}
@@ -65,29 +65,53 @@ public class MyPolynomial {
 	}
 	
 	//	+add(another:MyPolynomial):MyPolynomial
-	
 	public MyPolynomial add(MyPolynomial another) {
-		int degree1 = this.getDegree();
-		int degree2 = another.getDegree();
-		
-		if (degree2 > degree1) {
-			double[] newCoeffs = new double[degree2];
+		int minOfTwo = (this.getDegree() > another.getDegree() ? another.getDegree() : this.getDegree()) + 1;
+		int size = (minOfTwo > another.getDegree() ? this.getDegree() : another.getDegree()) + 1;
+		double[] out = new double[size];
+		double[] outCoeffs;
+		double[] anotherCoeffs;
+		if (minOfTwo - 1 == another.getDegree()) {
+			anotherCoeffs = another.getCoeffs();
+			outCoeffs = this.getCoeffs();
 		} else {
-			double[] newCoeffs = new double[degree1];
+			anotherCoeffs = this.getCoeffs();
+			outCoeffs = another.getCoeffs();
 		}
 		
-		double anotherCoeffs = another.getCoeffs();
-		
-		for (int i = 0; i < newCoeffs.length; i++) {
-			if (i > anotherCoeffs.length - 1) {
-				continue;
+		for (int i = 0; i < size; i++) {
+			if (i > minOfTwo - 1) {
+				out[i] = outCoeffs[i];
+			} else {
+				out[i] = outCoeffs[i] + anotherCoeffs[i];
 			}
-			newCoeffs[i] = anotherCoeffs[i] + this.coeffs[i];
 		}
 		
-		return new MyPolynomial(newCoeffs);
+		return new MyPolynomial(out);
 	}
 	
 	//	+multiply(another:MyPolynomial):MyPolynomial
-	
+	public MyPolynomial multiply(MyPolynomial another) {
+		int degree = another.getDegree() + this.getDegree();
+		double[] out = new double[degree + 1];
+		double[] thisCoeffs = this.getCoeffs();
+		double[] anotherCoeffs = another.getCoeffs();
+		
+		for (int i = 0; i < degree + 1; i++) {
+			double entry = 0.0;
+			for (int j = 0; j <= i; j++) {
+				if ((j > this.getDegree()) || (i - j > another.getDegree())) {
+					// prevents out of bounds:
+					// that is, thisCoeffs restricted from j = 0 to j = this.getDegree()
+					// and anotherCoeffs restricted from i-j = 0 to i-j = another.getDegree()
+					continue;
+				}
+				// formula: sum from j = 0 to i of (p_j)*(q_(i-j))
+				entry += thisCoeffs[j]*anotherCoeffs[i-j];
+			}
+			out[i] = entry;
+		}
+		
+		return new MyPolynomial(out);
+	}
 }
