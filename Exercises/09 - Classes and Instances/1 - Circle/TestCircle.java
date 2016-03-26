@@ -1,3 +1,5 @@
+// Test method for Circle model class.
+
 public class TestCircle {
 	
 	public static void main(String[] args) {
