@@ -1,3 +1,17 @@
+//	Circle model class
+//	-radius:double
+//	-colour:String
+//	+Circle()
+//	+Circle(radius:double)
+//	+Circle(radius:double, colour:String)
+//	+getRadius():double
+//	+getColour():String
+//	+setRadius(radius:double):void
+//	+setColour(colour:String):void
+//	+getArea():double
+//	+getPerimiter():double
+//	+toString():String
+
 public class Circle {
 	
 	// private instance variables, not accessible from outside this class
