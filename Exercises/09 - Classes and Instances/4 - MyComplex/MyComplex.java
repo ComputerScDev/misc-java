@@ -56,12 +56,12 @@ public class MyComplex {
 		this.im = im;
 	}
 	
-	// toString()
+	//	+toString():String
 	public String toString() {
 		return "(" + this.re + " + " + this.im + "i)";
 	}
 	
-	// public methods
+	//	public methods
 	//	+isReal():boolean
 	public boolean isReal() {
 		return (this.im == 0);
