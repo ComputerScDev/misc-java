@@ -102,8 +102,7 @@ public class MyTime {
 		minute++;
 		if (minute%60 == 0) {
 			minute = 0;
-			this.setMinute(minute);
-			this = this.nextHour();
+			this.setHour(this.nextHour().getHour());
 		}
 		this.setMinute(minute);
 		return this;
@@ -115,8 +114,7 @@ public class MyTime {
 		second++;
 		if (second%60 == 0) {
 			second = 0;
-			this.setSecond(second);
-			this = this.nextMinute();
+			this.setMinute(this.nextMinute().getMinute());
 		}
 		this.setSecond(second);
 		return this;
@@ -139,21 +137,19 @@ public class MyTime {
 		minute--;
 		if (minute == -1) {
 			minute = 59;
-			this.setMinute(minute);
-			this = this.lastHour();
+			this.setHour(this.lastHour().getHour());
 		}
 		this.setMinute(minute);
 		return this;
 	}
 	
 	//	+lastSecond():MyTime
-	public MyTime nextSecond() {
+	public MyTime lastSecond() {
 		int second = this.getSecond();
 		second--;
 		if (second == -1) {
 			second = 59;
-			this.setSecond(second);
-			this = this.lastMinute();
+			this.setMinute(this.lastMinute().getMinute());
 		}
 		this.setSecond(second);
 		return this;
