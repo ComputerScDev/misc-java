@@ -18,10 +18,12 @@ public class MyPolynomial {
 	private double[] coeffs;
 	
 	// constructors
+	//	+MyPolynomial(coeffs:double...)
 	public MyPolynomial(double... coeffs) {	// varargs
 		this.coeffs = coeffs;	// varargs is treated as array
 	}
 	
+	//	+MyPolynomial(filename:String)
 	public MyPolynomial(String filename) {
 		Scanner in = null;
 		try {
@@ -37,16 +39,17 @@ public class MyPolynomial {
 		}
 	}
 	
-	// get degree
+	//	+getDegree():int
 	public int getDegree() {
 		return this.coeffs.length - 1;
 	}
 	
-	// helper method
+	//	helper method
 	private double[] getCoeffs() {
 		return coeffs;
 	}
 	
+	//	+toString():String
 	public String toString() {
 		StringBuilder string = new StringBuilder();
 		for (int i = this.getDegree(); i >= 0; i--) {
