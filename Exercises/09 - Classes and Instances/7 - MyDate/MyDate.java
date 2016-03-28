@@ -66,7 +66,7 @@ public class MyDate {
 		int[] MonthNumbers = {0, 3, 3, 6, 1, 4, 6, 2, 5, 0, 3, 5};
 		int[] MonthNumbersLeap = {6, 2, 3, 6, 1, 4, 6, 2, 5, 0, 3, 5};
 		int centuryNumber = 6 - 2*((year / 100) % 4);
-		int monthNumber = isLeapYear(year) ?  MonthNumbersLeap[month-1] :  MonthNumbers[month-1];
+		int monthNumber = isLeapYear(year) ? MonthNumbersLeap[month - 1] : MonthNumbers[month - 1];
 		
 		return ((centuryNumber + (year % 100) + ((year % 100) / 4) + monthNumber + day) % 7);
 	}
@@ -157,7 +157,7 @@ public class MyDate {
 		
 		if (day > this.getUpperBound(this.getMonth())) {
 			day = 1;
-			this.setMonth(this.getMonth());
+			this.setMonth(this.nextMonth().getMonth());
 		}
 		
 		this.setDay(day);
@@ -239,8 +239,12 @@ public class MyDate {
 			throw new IllegalStateException("invalid year");
 		}
 		
-		if (this.isLeapYear(year) && (this.getMonth() == 2) && (this.getDay() == this.getUpperBound(2))) {
-			this.setDay(29);
+		if ((this.getMonth() == 2) && (this.getDay() == this.getUpperBound(2))) {
+			if (this.isLeapYear(year)) {
+				this.setDay(29);
+			} else {
+				this.setDay(28);
+			}
 		}
 		
 		this.setYear(year);
