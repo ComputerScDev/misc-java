@@ -85,73 +85,90 @@ public class MyTime {
 		":" + (this.second < 10? "0" + this.second : this.second);
 	}
 	
+	//	helper method
+	public MyTime newTime() {
+		return new MyTime(this.getHour(), this.getMinute(), this.getSecond());
+	}
+	
 	//	+nextHour():MyTime
 	public MyTime nextHour() {
+		MyTime newTime = this.newTime();
 		int hour = this.getHour();
 		hour++;
 		if (hour%24 == 0) {
 			hour = 0;
 		}
-		this.setHour(hour);
-		return this;
+		newTime.setHour(hour);
+		return newTime;
 	}
 	
 	//	+nextMinute():MyTime
 	public MyTime nextMinute() {
+		MyTime newTime = this.newTime();
 		int minute = this.getMinute();
 		minute++;
 		if (minute%60 == 0) {
 			minute = 0;
-			this.setHour(this.nextHour().getHour());
+			newTime.setHour(newTime.nextHour().getHour());
 		}
-		this.setMinute(minute);
-		return this;
+		newTime.setMinute(minute);
+		return newTime;
 	}
 	
 	//	+nextSecond():MyTime
 	public MyTime nextSecond() {
+		MyTime newTime = this.newTime();
 		int second = this.getSecond();
 		second++;
 		if (second%60 == 0) {
 			second = 0;
-			this.setMinute(this.nextMinute().getMinute());
+			newTime.setMinute(newTime.nextMinute().getMinute());
+			if (newTime.getHour() == 23) {
+				newTime.setHour(0);
+			}
 		}
-		this.setSecond(second);
-		return this;
+		newTime.setSecond(second);
+		return newTime;
 	}
 	
 	//	+lastHour():MyTime
 	public MyTime lastHour() {
+		MyTime newTime = this.newTime();
 		int hour = this.getHour();
 		hour--;
 		if (hour == -1) {
 			hour = 23;
 		}
-		this.setHour(hour);
-		return this;
+		newTime.setHour(hour);
+		return newTime;
 	}
 	
 	//	+lastMinute():MyTime
 	public MyTime lastMinute() {
+		MyTime newTime = this.newTime();
 		int minute = this.getMinute();
 		minute--;
 		if (minute == -1) {
 			minute = 59;
-			this.setHour(this.lastHour().getHour());
+			newTime.setHour(newTime.lastHour().getHour());
 		}
-		this.setMinute(minute);
-		return this;
+		newTime.setMinute(minute);
+		return newTime;
 	}
 	
 	//	+lastSecond():MyTime
 	public MyTime lastSecond() {
+		MyTime newTime = this.newTime();
 		int second = this.getSecond();
 		second--;
 		if (second == -1) {
 			second = 59;
-			this.setMinute(this.lastMinute().getMinute());
+			newTime.setMinute(newTime.lastMinute().getMinute());
+			if (newTime.getHour() == 0) {
+				newTime.setHour(23);
+			}
 		}
-		this.setSecond(second);
-		return this;
+		newTime.setSecond(second);
+		return newTime;
 	}
 }
