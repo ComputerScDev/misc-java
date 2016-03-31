@@ -1,22 +1,13 @@
-// Author model class
-
-// Class 3-tuple:
-// Name : Author
-// ----------------
-// Static attributes:
-// ----------------
-// -name:String
-// -email:String
-// -gender:char
-// ----------------
-// Dynamic behaviors:
-// ----------------
-// +Author(name:String, email:String, gender:char)
-// +getName():String
-// +getEmail():String
-// +getGender():char
-// +setEmail(email:String):void
-// +toString: String
+//	Author model class
+//	-name:String
+//	-email:String
+//	-gender:char
+//	+Author(name:String, email:String, gender:char)
+//	+getName():String
+//	+getEmail():String
+//	+getGender():char
+//	+setEmail(email:String):void
+//	+toString: String
 
 public class Author {
 	

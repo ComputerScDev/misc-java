@@ -1,23 +1,14 @@
-// Account model class
-
-// Class 3-tuple:
-// Name : Account
-// ----------------
-// Static attributes:
-// ----------------
-// -accountNumber:int
-// -balance:double = 0.0
-// ----------------
-// Dynamic behaviors:
-// ----------------
-// +Account(accountNumber:int, balance:double)
-// +Account(accountNumber:int)
-// +getAccountNumber():int
-// +getBalance():int
-// +setBalance(balance:double):void
-// +credit(amount:double):void
-// +debit(amount:double):void
-// +toString():String
+//	Account model class
+//	-accountNumber:int
+//	-balance:double = 0.0
+//	+Account(accountNumber:int, balance:double)
+//	+Account(accountNumber:int)
+//	+getAccountNumber():int
+//	+getBalance():int
+//	+setBalance(balance:double):void
+//	+credit(amount:double):void
+//	+debit(amount:double):void
+//	+toString():String
 
 public class Account {
 	

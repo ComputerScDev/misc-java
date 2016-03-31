@@ -1,24 +1,15 @@
-// Circle model class
-
-// Class 3-tuple:
-// Name : Circle
-// ----------------
-// Static attributes:
-// ----------------
-// -radius:double = 1.0
-// -colour:String = "red"
-// ----------------
-// Dynamic behaviors:
-// ----------------
-// +Circle(radius:double, colour:String)
-// +Circle(radius:double)
-// +Circle()
-// +getRadius():double
-// +getColour():String
-// +setRadius(radius:double):void
-// +setColour(colour:String):void
-// +toString():String
-// +getArea():double
+//	Circle model class
+//	-radius:double = 1.0
+//	-colour:String = "red"
+//	+Circle(radius:double, colour:String)
+//	+Circle(radius:double)
+//	+Circle()
+//	+getRadius():double
+//	+getColour():String
+//	+setRadius(radius:double):void
+//	+setColour(colour:String):void
+//	+toString():String
+//	+getArea():double
 
 public class Circle {
 	

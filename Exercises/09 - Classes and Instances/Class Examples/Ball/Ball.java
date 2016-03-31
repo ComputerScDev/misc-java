@@ -1,25 +1,16 @@
-// Ball model class
-// models position of a moving ball
-
-// Class 3-tuple:
-// Name : Ball
-// ----------------
-// Static attributes:
-// ----------------
-// -x:double = 0.0
-// -y:double = 0.0
-// ----------------
-// Dynamic behaviors:
-// ----------------
-// +Ball(x:double, y:double)
-// +Ball()
-// +getX():double
-// +getY():double
-// +setX(x:double):void
-// +setY(y:double):void
-// +setXY(x:double, y:double):void
-// +move(xDisp:double, yDisp:double):void
-// +toString():String
+//	Ball model class
+//	models position of a moving ball
+//	-x:double = 0.0
+//	-y:double = 0.0
+//	+Ball(x:double, y:double)
+//	+Ball()
+//	+getX():double
+//	+getY():double
+//	+setX(x:double):void
+//	+setY(y:double):void
+//	+setXY(x:double, y:double):void
+//	+move(xDisp:double, yDisp:double):void
+//	+toString():String
 
 public class Ball {
 	

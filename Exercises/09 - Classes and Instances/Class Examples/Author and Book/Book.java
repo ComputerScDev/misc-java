@@ -1,26 +1,17 @@
-// Book model class
-// assume a book (instance) is written only by one author
-
-// Class 3-tuple:
-// Name : Book
-// ----------------
-// Static attributes:
-// ----------------
-// -name:String
-// -author:Author
-// -price:double
-// -qtyInStock:int = 0
-// ----------------
-// Dynamic behaviors:
-// ----------------
-// +Book(name:String, author:Author, price:double)
-// +Book(name:String, author:Author, price:double, qtyInStock:int)
-// +getName():String
-// +getAuthor():Author
-// +getPrice():double
-// +getQtyInStock():int
-// +setPrice(price:double):void
-// +setQtyInStock(qtyInStock:int):void
+//	Book model class
+//	assume a book (instance) is written only by one author
+//	-name:String
+//	-author:Author
+//	-price:double
+//	-qtyInStock:int = 0
+//	+Book(name:String, author:Author, price:double)
+//	+Book(name:String, author:Author, price:double, qtyInStock:int)
+//	+getName():String
+//	+getAuthor():Author
+//	+getPrice():double
+//	+getQtyInStock():int
+//	+setPrice(price:double):void
+//	+setQtyInStock(qtyInStock:int):void
 
 public class Book {
 	
