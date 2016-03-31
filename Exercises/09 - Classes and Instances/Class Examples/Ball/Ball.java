@@ -14,25 +14,25 @@
 
 public class Ball {
 	
-	// private member fields (variables)
+	//	private member fields (variables)
 	private double x, y;
 	
-	// overloaded constructors
-	// first
+	//	overloaded constructors
+	//	first
 	public Ball(double x, double y) {
 		this.x = x;
 		this.y = y;
 	}
 	
-	// second
-	// instantiates ball object centred at the origin
+	//	second
+	//	instantiates ball object centred at the origin
 	public Ball() {
 		x = 0.0;
 		y = 0.0;
 	}
 	
-	// public getters and setters for private variables x, y
-	// getters
+	//	public getters and setters for private variables x, y
+	//	getters
 	public double getX() {
 		return x;
 	}
@@ -41,7 +41,7 @@ public class Ball {
 		return y;
 	}
 	
-	// setters
+	//	setters
 	public void setX(double x) {
 		this.x = x;
 	}
@@ -50,19 +50,19 @@ public class Ball {
 		this.y = y;
 	}
 	
-	// dual x,y setter
+	//	dual x,y setter
 	public void setXY(double x, double y) {
 		this.x = x;
 		this.y = y;
 	}
 	
-	// public method
+	//	public method
 	public void move(double xDisp, double yDisp) {
 		x += xDisp;
 		y += yDisp;
 	}
 	
-	// public toString() for object/instance description
+	//	public toString() for object/instance description
 	public String toString() {
 		return "Ball @ (" + x + ", " + y + ")";
 	}

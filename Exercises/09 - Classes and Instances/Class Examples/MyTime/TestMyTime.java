@@ -1,5 +1,5 @@
-// test 'MyTime' class
-// instantiates a test object of the MyTime model class
+//	test 'MyTime' class
+//	instantiates a test object of the MyTime model class
 
 public class TestMyTime {
 	
@@ -9,16 +9,16 @@ public class TestMyTime {
 		System.out.println(t1.nextSecond());
 		System.out.println(t1.nextSecond().nextSecond().nextSecond());
 		
-		// MyTime t2 = new MyTime(12, 69, 69); // abrupt termination, NOT continue to next statement
+		//	MyTime t2 = new MyTime(12, 69, 69); //	abrupt termination, NOT continue to next statement
 		
-		// Handling exception
+		//	Handling exception
 		try {
 			MyTime t3 = new MyTime(12, 69, 69);
-			// skip remaining statements in try, goto catch
+			//	skip remaining statements in try, goto catch
 			System.out.println(t1);
 		} catch (IllegalArgumentException ex) {
 			ex.printStackTrace();
-		}	// after try or catch, continue next statement
+		}	//	after try or catch, continue next statement
 		
 		System.out.println("Continue after exception!");
 	}

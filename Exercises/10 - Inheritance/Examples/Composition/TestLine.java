@@ -4,7 +4,7 @@ public class TestLine {
 	
 	public static void main(String[] args) {
 		Line l1 = new Line(0, 3, 4, 0);
-		System.out.println(l1);	// toString()
+		System.out.println(l1);	//	toString()
 		System.out.println(l1.getLength());
 		l1.setBeginXY(1, 2);
 		l1.setEndXY(3, 4);

@@ -15,14 +15,14 @@
 
 public class Book {
 	
-	// private member fields (variables)
+	//	private member fields (variables)
 	private String name;
 	private Author author;
 	private double price;
 	private int qtyInStock;
 	
-	// overloaded constructors
-	// first
+	//	overloaded constructors
+	//	first
 	public Book (String name, Author author, double price) {
 		this.name = name;
 		this.author = author;
@@ -30,7 +30,7 @@ public class Book {
 		this.qtyInStock = 0;
 	}
 	
-	// second
+	//	second
 	public Book(String name, Author author, double price, int qtyInStock) {
 		this.name = name;
 		this.author = author;
@@ -38,14 +38,14 @@ public class Book {
 		this.qtyInStock = qtyInStock;
 	}
 	
-	// public getters and setters for private variables
-	// getters
+	//	public getters and setters for private variables
+	//	getters
 	public String getName() {
 		return name;
 	}
 	
 	public Author getAuthor() {
-		return author;	// return member field author, which is an instance of class Author
+		return author;	//	return member field author, which is an instance of class Author
 	}
 	
 	public double getPrice() {
@@ -56,7 +56,7 @@ public class Book {
 		return qtyInStock;
 	}
 	
-	// setters
+	//	setters
 	public void setPrice(double price) {
 		this.price = price;
 	}
@@ -65,8 +65,8 @@ public class Book {
 		this.qtyInStock = qtyInStock;
 	}
 	
-	// public toString() for object/instance description
+	//	public toString() for object/instance description
 	public String toString() {
-		return "'" + name + "' by " + author + ".";	// author.toString()
+		return "'" + name + "' by " + author + ".";	//	author.toString()
 	}
 }

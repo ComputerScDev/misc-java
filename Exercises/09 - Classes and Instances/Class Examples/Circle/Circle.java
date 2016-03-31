@@ -13,39 +13,39 @@
 
 public class Circle {
 	
-	// constant member fields
-	// public, accessible to outside
-	// static, common to all instances
+	//	constant member fields
+	//	public, accessible to outside
+	//	static, common to all instances
 	public static final double DEFAULT_RADIUS = 8.8;
 	public static final String DEFAULT_COLOUR = "red";
 	
-	// private member fields (variables)
+	//	private member fields (variables)
 	private double radius;
 	private String colour;
 	
-	// overloaded constructors
-	// first
+	//	overloaded constructors
+	//	first
 	public Circle() {
 		radius = DEFAULT_RADIUS;
 		colour = DEFAULT_COLOUR;
 	}
 	
-	// second
+	//	second
 	public Circle(double radius) {
-		// takes argument "radius" and sets it
-		// as the value of the private field 'this.radius'
+		//	takes argument "radius" and sets it
+		//	as the value of the private field 'this.radius'
 		this.radius = radius;
 		colour = DEFAULT_COLOUR;
 	}
 	
-	// third
+	//	third
 	public Circle(double radius, String colour) {
 		this.radius = radius;
 		this.colour = colour;
 	}
 	
-	// public getter and setter for private variables
-	// getters
+	//	public getter and setter for private variables
+	//	getters
 	public double getRadius() {
 		return radius;
 	}
@@ -54,7 +54,7 @@ public class Circle {
 		return colour;
 	}
 	
-	// setters
+	//	setters
 	public void setRadius(double radius) {
 		this.radius = radius;
 	}
@@ -63,12 +63,12 @@ public class Circle {
 		this.colour = colour;
 	}
 	
-	// public toString() for object/instance description
+	//	public toString() for object/instance description
 	public String toString() {
 		return "Circle with radius = " + radius + " and colour of " + colour + ".";
 	}
 	
-	// public methods
+	//	public methods
 	public double getArea() {
 		return radius*radius*Math.PI;
 	}

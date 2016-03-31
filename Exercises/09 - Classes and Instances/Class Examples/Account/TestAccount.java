@@ -1,5 +1,5 @@
-// test 'account' class
-// instantiates a test object of the account model class
+//	test 'account' class
+//	instantiates a test object of the account model class
 
 public class TestAccount {
 	

@@ -1,46 +1,37 @@
-// MyCircle model class
-
-// Class 3-tuple:
-// Name : MyCircle
-// ----------------
-// Static attributes:
-// ----------------
-// -Centre:MyPoint = {0, 0}
-// -radius:double = 1.0
-// ----------------
-// Dynamic behaviors:
-// ----------------
-// +MyCircle()
-// +MyCircle(xCentre:int, yCentre:int, radius:double)
-// +MyCircle(Centre:MyPoint, radius:double)
-// +getRadius():double
-// +getCentre():MyPoint
-// +getArea():double
-// +getPerimeter():double
-// +setRadius(radius:double):void
-// +setCentre(Centre:MyPoint):void
-// +setCentreX(x:int):void
-// +setCentreY(y:int):void
-// +setCentreXY(x:int, y:int):void
-// +toString():String
-// +distance(another:MyCircle):double
+//	MyCircle model class
+//	-Centre:MyPoint = {0, 0}
+//	-radius:double = 1.0
+//	+MyCircle()
+//	+MyCircle(xCentre:int, yCentre:int, radius:double)
+//	+MyCircle(Centre:MyPoint, radius:double)
+//	+getRadius():double
+//	+getCentre():MyPoint
+//	+getArea():double
+//	+getPerimeter():double
+//	+setRadius(radius:double):void
+//	+setCentre(Centre:MyPoint):void
+//	+setCentreX(x:int):void
+//	+setCentreY(y:int):void
+//	+setCentreXY(x:int, y:int):void
+//	+toString():String
+//	+distance(another:MyCircle):double
 
 public class MyCircle {
 	
-	// private member fields (variables)
-	private MyPoint centre;	// declare instance centre
+	//	private member fields (variables)
+	private MyPoint centre;	//	declare instance centre
 	private double radius;
 	
-	// overloaded constructors
-	// first
+	//	overloaded constructors
+	//	first
 	public MyCircle() {
-		centre = new MyPoint();	// construct instance object at (0,0)
+		centre = new MyPoint();	//	construct instance object at (0,0)
 		radius = 1.0;
 	}
 	
-	// second
+	//	second
 	public MyCircle(int xCentre, int yCentre, double radius) {
-		centre = new MyPoint(xCentre, yCentre);	// construct instance object
+		centre = new MyPoint(xCentre, yCentre);	//	construct instance object
 		this.radius = radius;
 	}
 	
@@ -49,8 +40,8 @@ public class MyCircle {
 		this.radius = radius;
 	}
 	
-	// public getters and setters for private variables
-	// getters
+	//	public getters and setters for private variables
+	//	getters
 	public double getRadius() {
 		return radius;
 	}
@@ -67,7 +58,7 @@ public class MyCircle {
 		return centre.getY();
 	}
 	
-	// setters
+	//	setters
 	public void setRadius(double radius) {
 		this.radius = radius;
 	}
@@ -89,12 +80,12 @@ public class MyCircle {
 		centre.setY(y);
 	}
 	
-	// public toString() for object/instance description
+	//	public toString() for object/instance description
 	public String toString() {
 		return "centre = " + centre + ", radius = " + radius;
 	}
 	
-	// public methods
+	//	public methods
 	public double getArea() {
 		return Math.PI*radius*radius;
 	}
@@ -104,6 +95,6 @@ public class MyCircle {
 	}
 	
 	public double distance(MyCircle another) {
-		return centre.distance(another.centre);	// use distance() method of MyPoint object
+		return centre.distance(another.centre);	//	use distance() method of MyPoint object
 	}
 }

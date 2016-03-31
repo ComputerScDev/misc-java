@@ -11,20 +11,20 @@
 
 public class Author {
 	
-	// private member fields (variables)
+	//	private member fields (variables)
 	private String name;
 	private String email;
 	private char gender;
 	
-	// constructor
+	//	constructor
 	public Author(String name, String email, char gender) {
 		this.name = name;
 		this.email = email;
 		this.gender = gender;
 	}
 	
-	// public getters and setters for private variables
-	// getters
+	//	public getters and setters for private variables
+	//	getters
 	public String getName() {
 		return name;
 	}
@@ -37,13 +37,13 @@ public class Author {
 		return gender;
 	}
 	
-	// setter
-	// only one setter, for email field
+	//	setter
+	//	only one setter, for email field
 	public void setEmail(String email) {
 		this.email = email;
 	}
 	
-	// public toString() for object/instance description
+	//	public toString() for object/instance description
 	public String toString() {
 		return name + " (" + gender + ") at " + email + ".";
 	}

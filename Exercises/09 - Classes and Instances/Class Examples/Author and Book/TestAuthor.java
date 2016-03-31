@@ -1,5 +1,5 @@
-// test 'Author' class
-// instantiates a test object of the Author model class
+//	test 'Author' class
+//	instantiates a test object of the Author model class
 
 public class TestAuthor {
 	

@@ -11,12 +11,12 @@ public class Cylinder extends Circle {
 	private double height;
 	
 	public Cylinder() {
-		super();	// invokes superclass constructor 'Circle()'
+		super();	//	invokes superclass constructor 'Circle()'
 		this.height = 1.0;
 	}
 	
 	public Cylinder(double radius, double height) {
-		super(radius);	// invokes superclass constructor 'Circle(radius)'
+		super(radius);	//	invokes superclass constructor 'Circle(radius)'
 		this.height = height;
 	}
 	
@@ -29,7 +29,7 @@ public class Cylinder extends Circle {
 	}
 	
 	public double getVolume() {
-		return this.getArea() * this.height;	// use Circle superclass 'getArea()' method
+		return this.getArea() * this.height;	//	use Circle superclass 'getArea()' method
 	}
 	
 }

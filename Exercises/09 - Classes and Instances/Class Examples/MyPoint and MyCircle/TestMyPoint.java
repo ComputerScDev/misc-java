@@ -1,5 +1,5 @@
-// test 'MyPoint' class
-// instantiates a test object of the MyPoint model class
+//	test 'MyPoint' class
+//	instantiates a test object of the MyPoint model class
 
 public class TestMyPoint {
 	
@@ -12,7 +12,7 @@ public class TestMyPoint {
 		MyPoint p2 = new MyPoint(4, 0);
 		System.out.println(p2);
 		
-		// Test distance() methods
+		//	Test distance() methods
 		System.out.println(p1.distance(4,0));
 		System.out.println(p1.distance(p2));
 	}

@@ -1,5 +1,5 @@
-// test 'MyCircle' class
-// instantiates a test object of the MyCircle model class
+//	test 'MyCircle' class
+//	instantiates a test object of the MyCircle model class
 
 public class TestMyCircle {
 	
@@ -13,7 +13,7 @@ public class TestMyCircle {
 		MyCircle c2 = new MyCircle(p1, 9);
 		System.out.println(c2);
 		
-		// Test distance() method
+		//	Test distance() method
 		System.out.println(c1.distance(c2));
 	}
 }
