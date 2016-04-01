@@ -8,7 +8,7 @@
 
 public class Circle {
 
-	public static final double DEFAULT_RADIUS = 8.8;
+	public static final double DEFAULT_RADIUS = 1.0;
 	public static final String DEFAULT_COLOUR = "red";
 	private double radius;
 	private String colour;
@@ -27,8 +27,13 @@ public class Circle {
 		return radius;
 	}
 	
+	public String getColour() {
+		return colour;
+	}
+	
 	public double getArea() {
 		return radius*radius*Math.PI;
 	}
+	
 	
 }
