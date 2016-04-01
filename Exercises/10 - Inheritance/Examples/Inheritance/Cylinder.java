@@ -5,6 +5,8 @@
 //	+Cylinder(radius:double, height:double)
 //	+getHeight():double
 //	+getVolume():double
+//	+getArea():double
+//	+toString():String
 
 public class Cylinder extends Circle {
 	
