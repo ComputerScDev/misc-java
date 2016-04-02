@@ -35,6 +35,6 @@ public class Person {
 	
 	//	+toString():String
 	public String toString() {
-		return name + " (" + address ").";
+		return name + " (" + address + ").";
 	}
 }

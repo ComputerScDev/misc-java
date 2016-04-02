@@ -30,7 +30,7 @@ public class Teacher extends Person {
 		// check if course exists in courselist
 		for (int i = 0; i < numCourses; i++) {
 			if (courses[i].equals(course)) {
-				return false
+				return false;
 			}
 		}
 		courses[numCourses] = course;
@@ -42,6 +42,7 @@ public class Teacher extends Person {
 	//	return false if the course does not exist in courselist
 	public boolean removeCourse(String course) {
 		//	search for course index
+		int courseIndex = numCourses;
 		for (int i = 0; i < numCourses; i++) {
 			if (courses[i].equals(course)) {
 				courseIndex = i;
