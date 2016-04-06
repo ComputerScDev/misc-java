@@ -1,4 +1,4 @@
-# exercises-exec
+# misc-java
 Miscellaneous Java code (beginner to intermediate level).
 
 exercises from: 
