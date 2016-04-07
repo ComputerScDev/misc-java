@@ -88,7 +88,7 @@ public class LineSub extends Point {
 	}
 	
 	//	+getEndX():int
-	public Point getEndX() {
+	public int getEndX() {
 		return end.getX();
 	}
 	
