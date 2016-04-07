@@ -35,7 +35,10 @@ public class Circle {
 		return radius*radius*Math.PI;
 	}
 	
+	//	if invoked in  Cylinder, and we use getArea() here, this method's
+	//	getArea() invocation will be that of Cylinder's getArea, so we
+	//	replace that with radius*radius*Math.PI;
 	public String toString() {
-		return "circle instance state:\n radius = " + radius + ",\n colour = " + colour + ",\n area = " + this.getArea() + ".";
+		return "circle instance state:\nradius = " + radius + ",\ncolour = " + colour + ",\narea = " + radius*radius*Math.PI;
 	}	
 }

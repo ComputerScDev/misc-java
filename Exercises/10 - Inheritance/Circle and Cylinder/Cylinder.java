@@ -1,7 +1,7 @@
 //	Cylinder model subclass of Circle superclass
 //	-height:double = 1.0
 //	+Cylinder()
-//	+Cylinder(radius:double)
+//	+Cylinder(height:double)
 //	+Cylinder(radius:double, height:double)
 //	+getHeight():double
 //	+getVolume():double
@@ -18,7 +18,7 @@ public class Cylinder extends Circle {
 		height = DEFAULT_HEIGHT;
 	}
 	
-	//	+Cylinder(radius:double)
+	//	+Cylinder(height:double)
 	public Cylinder(double height) {
 		super();	// invokes superclass' no-arg constructor
 		this.height = height;
@@ -53,7 +53,6 @@ public class Cylinder extends Circle {
 	
 	@Override
 	public String toString() {
-		return "cylinder instance state: \nsubclass of " + super.toString() + "\n height = " + getHeight();
+		return "cylinder instance state:\nsubclass of " + super.toString() + "\nheight = " + getHeight();
 	}
-	
 }
