@@ -3,7 +3,7 @@
 //	LineSub line subclass of Point superclass
 //	-end:Point
 //	+LineSub(x1:int, y1:int, x2:int, y2:int)
-//	+LineSub(Point begin, Point end)
+//	+LineSub(begin:Point, end:Point)
 //	+getBegin():Point
 //	+setBegin(begin:Point):void
 //	+getBeginX():int
