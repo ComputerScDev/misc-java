@@ -8,6 +8,7 @@ public class TestCircle {
 		System.out.println("circle #1 properties:\n"
 		+ "radius = " + c1.getRadius() + "\n"
 		+ "colour = " + c1.getColour() + "\n"
-		+ c1.toString() + "\n");
+		+ c1.toString() + "\n");	// c1, despite being a circle, internally holds a cylinder object
+									//	so here we invoke the overridden cylinder version of toString() 
 	}
 }
