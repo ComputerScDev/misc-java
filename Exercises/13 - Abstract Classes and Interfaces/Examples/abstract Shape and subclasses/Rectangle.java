@@ -21,7 +21,7 @@ public class Rectangle extends Shape {
 	}
 	
 	//	Override the inherited getArea() 
-	//	to provide proper -implementation-
+	//	to provide proper implementation
 	@Override
 	public double getArea() {
 		return length * width;
