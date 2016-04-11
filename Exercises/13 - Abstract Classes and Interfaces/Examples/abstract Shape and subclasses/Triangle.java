@@ -21,7 +21,7 @@ public class Triangle extends Shape {
 	}
 	
 	//	Override the inherited getArea()
-	//	to provide the proper -implementation-
+	//	to provide the proper implementation
 	@Override
 	public double getArea() {
 		return 0.5 * base * height;
