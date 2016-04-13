@@ -1,4 +1,6 @@
-//	Point model superclass
+/**
+* Point model superclass
+*/
 
 public class Point {
 	
@@ -6,7 +8,9 @@ public class Point {
 	private float y;
 	public static final float DEFAULT_VALUE = 0.0f;
 	
-	//	constructors
+	/**
+	* constructors
+	*/
 	public Point() {
 		x = DEFAULT_VALUE;
 		y = DEFAULT_VALUE;
@@ -17,7 +21,9 @@ public class Point {
 		this.y = y;
 	}
 	
-	//	getters
+	/**
+	* getters
+	*/
 	public float getX() {
 		return x;
 	}
@@ -33,7 +39,9 @@ public class Point {
 		return getXY;
 	}
 	
-	//	setters
+	/** 
+	* setters
+	*/
 	public void setX(float x) {
 		this.x = x;
 	}
@@ -47,7 +55,9 @@ public class Point {
 		this.y = y;
 	}
 	
-	//	toString()
+	/**
+	* toString()
+	*/
 	public String toString() {
 		return "(" + x + ", " + y + ")";
 	}

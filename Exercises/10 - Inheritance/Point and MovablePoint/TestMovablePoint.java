@@ -1,4 +1,6 @@
-//	Test driver for MovablePoint subclass of Point superclass
+/**
+* Test driver for MovablePoint subclass of Point superclass
+*/
 
 public class TestMovablePoint {
 	
