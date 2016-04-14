@@ -1,20 +1,23 @@
-/** abstract class example
-abstract classes provide a 'template for further development',
-i.e. provides a common interface (or protocol/contract/naming convention)
-to all its subclasses. for example, in abstract class Shape we can define
-abstract methods getArea() and draw(). no implementation for these are
-possible for Shape itself, but all subclasses are -forced- to use these
-method signatures, guaranteeing that they must include implementations
-for these methods.
-
-rule of thumb: program at the interface level, not at the implementation.
-i.e. make references at the superclass, substitute with subclass instances
-and invoke methods defined in the superclass only.
+/** 
+* abstract class example
+* abstract classes provide a 'template for further development',
+* i.e. provides a common interface (or protocol/contract/naming convention)
+* to all its subclasses. for example, in abstract class Shape we can define
+* abstract methods getArea() and draw(). no implementation for these are
+* possible for Shape itself, but all subclasses are -forced- to use these
+* method signatures, guaranteeing that they must include implementations
+* for these methods.
+* 
+* rule of thumb: program at the interface level, not at the implementation.
+* i.e. make references at the superclass, substitute with subclass instances
+* and invoke methods defined in the superclass only.
 */
 
-//	Test driver for abstract class Shape and its subclasses
-//	Compare this file with the output found in polymorphism 
-//	'TestShape.java' Shape example: https://goo.gl/lnXUrE
+/**
+* Test driver for abstract class Shape and its subclasses
+* Compare this file with the output found in polymorphism 
+* 'TestShape.java' Shape example: https://goo.gl/lnXUrE
+*/
 
 public class TestShape {
 	

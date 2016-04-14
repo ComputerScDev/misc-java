@@ -1,14 +1,19 @@
-/**	abstract Shape superclass and its subclasses.
-Rectangle subclass of Shape superclass, using inheritance
+/**	
+* abstract Shape superclass and its subclasses.
+* Rectangle subclass of Shape superclass, using inheritance
 */
 
 public class Rectangle extends Shape {
 	
-	//	private member fields (variables)
+	/**
+	* private member field (variable)
+	*/
 	private int length;
 	private int width;
 	
-	//	constructor
+	/**
+	* constructor
+	*/
 	public Rectangle(String colour, int length, int width) {
 		super(colour);
 		this.length = length;
@@ -20,8 +25,10 @@ public class Rectangle extends Shape {
 		return "rectangle[length=" + length + ", width=" + width + ", " + super.toString() + "]";
 	}
 	
-	//	Override the inherited getArea() 
-	//	to provide proper implementation
+	/**
+	* Override the inherited getArea()
+	* to provide proper implementation
+	*/
 	@Override
 	public double getArea() {
 		return length * width;
