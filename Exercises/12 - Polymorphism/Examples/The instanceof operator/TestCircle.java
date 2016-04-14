@@ -1,4 +1,6 @@
-//	Testing 'instanceof' operator
+/**
+* Testing 'instanceof' operator
+*/
 
 public class TestCircle {
 	

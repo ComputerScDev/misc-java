@@ -1,9 +1,13 @@
-//	upcasting & downcasting
-//	subclass B of superclass A, with subclass C
+/**
+* upcasting & downcasting
+* subclass B of superclass A, with subclass C
+*/
 
 public class B extends A {
 	
-	//	constructor
+	/**
+	* constructor
+	*/
 	public B() {
 		super();
 		System.out.println("constructed B");

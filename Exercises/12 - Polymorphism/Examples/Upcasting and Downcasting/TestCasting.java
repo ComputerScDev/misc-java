@@ -1,17 +1,27 @@
-//	Test driver for superclass A and its subclasses
-//	demonstrates upcasting & downcasting
+/**
+* Test driver for superclass A and its subclasses
+* demonstrates upcasting & downcasting
+*/
 
 public class TestCasting {
 	
 	public static void main(String[] args) {
 		A a1 = new C();	// upcast, we're constructing object A using a reference to object C
-		//	above goes through constructors for A, B, C
+		
+		/**
+		* above goes through constructors for A, B, C
+		*/
+		
 		System.out.println(a1);	// runs overriding C object toString()
 		B b1 = (B)a1;	// downcast object A to a B object - ok
 		C c1 = (C)b1;	// downcast object B to a C object - ok
 		System.out.println(b1 + "\n" + c1);
-		//	notice that calling b1's toString() invokes C's toString() method
-		//	since it overrides both A and B's toString() methods
+		
+		/**
+		* notice that calling b1's toString() invokes C's toString() method
+		* since it overrides both A and B's toString() methods
+		*/
+		
 		System.out.println(a1 instanceof C);	// true
 		System.out.println(a1 instanceof B);	// true
 		System.out.println(a1 instanceof A);	// true
