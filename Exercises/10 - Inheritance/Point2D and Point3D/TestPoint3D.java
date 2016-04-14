@@ -1,4 +1,6 @@
-//	Test driver for Point3D subclass of Point2D superclass
+/** 
+* Test driver for Point3D subclass of Point2D superclass
+*/
 
 public class TestPoint3D {
 	
