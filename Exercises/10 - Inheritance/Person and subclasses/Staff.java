@@ -1,5 +1,6 @@
-/** Staff subclass of Person superclass 
-*/
+/** 
+ * Staff subclass of Person superclass 
+ */
 
 public class Staff extends Person {
 	
