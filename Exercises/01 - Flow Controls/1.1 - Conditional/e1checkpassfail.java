@@ -1,5 +1,5 @@
 // Exercises on Conditionals(Decision). 1 - Pass/Fail Check
-//
+
 public class e1checkpassfail {
   public static void main(String[] args) {
     int grade = 49;
