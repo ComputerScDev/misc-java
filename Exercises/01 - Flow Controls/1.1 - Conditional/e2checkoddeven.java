@@ -1,5 +1,5 @@
 // Exercises on Conditionals(Decision). 2 - Odd/Even Check
-//
+
 public class e2checkoddeven {
   public static void main(String[] args) {
     int number = 49;
