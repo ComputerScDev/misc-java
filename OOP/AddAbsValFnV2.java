@@ -22,14 +22,12 @@ public class AddAbsValFnV2 {
 		}
 		absSum = addAbsVal(z);
 		System.out.format("Sum of absolute values of array elements = %.2f\n", absSum);
-	} // end main
+	}
 	
-	// return sum of absolute values of two individual numbers
 	public static double addAbsVal(double x, double y) {
 		return Math.abs(x) + Math.abs(y);
 	}
 	
-	// return sum of absolute values of array elements
 	public static double addAbsVal(double[] x) {
 		double sum = 0;
 		for (int i = 0; i < x.length; i++) {
@@ -37,6 +35,5 @@ public class AddAbsValFnV2 {
 		}
 		return sum;
 	}
-	// note that the method 'addAbsVal' is overloaded
-	// so we only require one function call for many scenarios
+
 }
