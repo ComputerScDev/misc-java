@@ -14,9 +14,8 @@ public class AddAbsValFn {
 		
 		System.out.format("|%.2f| + |%.2f| = %.2f\n", x, y, absSum);
 		
-	} // end main
+	}
 	
-	// return sum of absolute values of two individual numbers
 	public static double addAbsVal(double x, double y) {
 		return Math.abs(x) + Math.abs(y);
 	}
