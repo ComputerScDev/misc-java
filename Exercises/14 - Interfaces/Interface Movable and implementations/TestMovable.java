@@ -12,6 +12,10 @@ public class TestMovable {
 		Movable m2 = new MovableCircle(2, 1, 2, 1, 20);	// upcast (programming at interface level)
 		System.out.println("new circle: " + m2);
 		m2.moveRight();
-		System.out.println("moving right:\n" + m2);
+		System.out.println("moving right:\n" + m2 + "\n");
+		Movable m3 = new MovableRectangle(-1, 1, 1, -1, 10, 10);	// upcast (programming at interface level)
+		System.out.println("new rectangle: " + m3);
+		m3.moveUp();
+		System.out.println("moving up:\n" + m3);
 	}
 }
