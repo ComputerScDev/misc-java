@@ -1,6 +1,9 @@
 /**
 * Example: instance method (non-static method) can access static (class) methods/variables and other instance methods/variables
 * not the other way around. note that static members cannot be hidden/overriden in the subclass as non-static.
+*
+* Hence: static members form a closed subset of the set of class members, where non-static members outside the subset can access
+* static members, but not the other way around.
 */
 
 public class Hello {
