@@ -1,12 +1,17 @@
-// Exercises on Conditionals(Decision). 1 - Pass/Fail Check
+/**
+* simple decision. pass/fail check
+*/
 
-public class e1checkpassfail {
-  public static void main(String[] args) {
-    int grade = 49;
-    if (grade >= 50) {
-      System.out.println("PASS");
-    } else {
-      System.out.println("FAIL");
-    }
-  }
-}
+ 
+ public class e1checkpassfail {
+	 
+	 public static void main(String[] args) {
+		 int grade = 49;
+		 if (grade >= 50) {
+			 System.out.println("PASS");
+		 } else {
+			 System.out.println("FAIL");
+		 }
+	 }
+ }
+ 
