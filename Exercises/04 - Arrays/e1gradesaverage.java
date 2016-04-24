@@ -1,7 +1,9 @@
-/* Write a program called GradesAverage, which prompts user for the number of students, 
-reads it from the keyboard, and saves it in an int variable called numStudents. 
-It then prompts user for the grades of each of the students and saves them in an 
-int array called grades. Your program shall check that the grade is between 0 and 100. */ 
+/** 
+* Write a program called GradesAverage, which prompts user for the number of students, 
+* reads it from the keyboard, and saves it in an int variable called numStudents. 
+* It then prompts user for the grades of each of the students and saves them in an 
+* int array called grades. Your program shall check that the grade is between 0 and 100. 
+*/
 
 import java.util.Scanner;
 
@@ -35,6 +37,5 @@ class e1gradesaverage {
 		}
 		e1gradesaverage im = new e1gradesaverage();
 		System.out.println("The average is "+im.computeAverage(grades,numStudents));
-	}
-	
+	}	
 }

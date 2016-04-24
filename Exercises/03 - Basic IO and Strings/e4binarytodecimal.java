@@ -1,4 +1,6 @@
-// Convert an input binary string into its equivalent decimal number.
+/**
+* convert an input binary string into its equivalent decimal number
+*/
 
 import java.util.Scanner;
 
@@ -19,7 +21,6 @@ class e4binarytodecimal {
 	}
 	
 	public static void main(String[] args) {
-		
 		e4binarytodecimal im = new e4binarytodecimal();
 		Scanner in = new Scanner(System.in);
 		
@@ -31,5 +32,4 @@ class e4binarytodecimal {
 		} 
 		System.out.println("is "+ im.convertToDec(binStr)+" as a decimal.");
 	}
-	
 }

@@ -1,7 +1,6 @@
 /**
 * simple decision. print number in words using either nested-if or switch.
 */
-// Exercises on Conditionals(Decision). 3 - Print Number in Words (nested-if vs. switch)
 
 public class e3printnumberinword {
 	

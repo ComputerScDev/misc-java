@@ -1,3 +1,7 @@
+/**
+* converts a hex number to its decimal form
+*/
+
 import java.util.Scanner;
 import java.math.BigInteger;
 
@@ -48,7 +52,5 @@ class e5hextodecimal {
 			BigInteger dec = in.nextBigInteger();
 			System.out.println("is "+im.dec2hex(dec)+" as a hex.");
 		} 
-
-	}
-	
+	}	
 }

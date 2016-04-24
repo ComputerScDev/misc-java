@@ -1,10 +1,12 @@
-// Checks if the input String is a palindrome.
+/**
+* checks if the input String is a palindrome
+*/
 
 import java.util.Scanner;
 
 class e3testpalindrome {
 	
-	static String regularExpression = "[^A-z]";
+	private static String regularExpression = "[^A-z]";
 	
 	public String reverseStr(String exStr) {
 		int exStrLen = exStr.length();
@@ -22,15 +24,15 @@ class e3testpalindrome {
 		System.out.print("Enter a phrase/word: ");
 		inStr = in.nextLine(); // Get unmodified String.
 		String exStr = inStr.toLowerCase().replaceAll(regularExpression, "");
-		// Create modified String.
+		
+		/** 
+		* create modified String
+		*/
 		String outStr = im.reverseStr(exStr);
 		if (exStr.equals(outStr)) {
 			System.out.println(inStr+" is a palindrome.");
 		} else {
 			System.out.println(inStr+" is not a palindrome.");
-		}
-		
+		}	
 	}
-	
 }
-

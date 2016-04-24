@@ -1,3 +1,7 @@
+/**
+* computes area and circumference of a circle using user input values
+*/
+
 import java.util.Scanner;
 
 
@@ -19,5 +23,4 @@ class e3circlecomputation {
 		System.out.println("The area is "+ im.computeArea(radius));
 		System.out.println("The circumference is "+ im.computeCircumference(radius));
 	}
-	
 }

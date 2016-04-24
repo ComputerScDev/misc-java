@@ -1,5 +1,7 @@
-/* Write a program called Hex2Bin to convert a hexadecimal string 
-into its equivalent binary string.  */
+/**
+* write a program called Hex2Bin to convert a hexadecimal string 
+* into its equivalent binary string.  
+*/
 
 import java.util.Scanner;
 
@@ -58,7 +60,6 @@ class e2hex2bin {
 		System.out.println("The equivalent binary for hexadecimal '"
 		+input+"' is "+im.convertHextoBinary(input));
 	}
-	
 }
 
 // Alternate code:
