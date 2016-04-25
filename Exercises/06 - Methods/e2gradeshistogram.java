@@ -1,8 +1,10 @@
-/* Write a program called GradesHistogram, which reads in n grades 
-(of int between 0 and 100, inclusive) from a text file called "grades.in" 
-and displays the histogram horizontally and vertically. The file has the following format:
-numStduents:int
-grade1:int grade2:int .... gradeN:int */
+/**
+* Write a program called GradesHistogram, which reads in n grades 
+* (of int between 0 and 100, inclusive) from a text file called "grades.in" 
+* and displays the histogram horizontally and vertically. The file has the following format:
+* numStduents:int
+* grade1:int grade2:int .... gradeN:int 
+*/
 
 import java.io.*;
 import java.util.Scanner;
@@ -10,10 +12,14 @@ import java.util.Scanner;
 class e2gradeshistogram {
 	
 	public static int[] grades;
-	// Declare an int array of grades, to be allocated later.
+	/**
+	* Declare an int array of grades, to be allocated later.
+	*/
 	public static int[] bins = new int[10];
-	// Declare and allocate an int array for histogram bins.
-	// 10 bins for 0-9, 10-19, ..., 90-100.
+	/**
+	* Declare and allocate an int array for histogram bins.
+	* 10 bins for 0-9, 10-19, ..., 90-100.
+	*/
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		readGrades("grades.in.txt");
@@ -22,8 +28,10 @@ class e2gradeshistogram {
 		printHistogramVertical();
 	}
 	
-	// Read grades from 'filename', stored in 'grades' array.
-	// Assume that the inputs are valid.
+	/**
+	* Read grades from 'filename', stored in 'grades' array.
+	* Assume that the inputs are valid.
+	*/
 	public static void readGrades(String filename) throws FileNotFoundException {
 		String filepath = e2gradeshistogram.class.getResource(filename).getPath();
 		Scanner file = new Scanner(new File(filename));
@@ -86,5 +94,4 @@ class e2gradeshistogram {
 			System.out.println();
 		}
 	}
-	
 }

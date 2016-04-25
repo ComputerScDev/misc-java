@@ -1,7 +1,9 @@
-/* Write a program called GradesStatistics, which reads in n grades 
-(of int between 0 and 100, inclusive) and displays the average, minimum, maximum, 
-and standard deviation. Your program shall check for valid input. You should keep 
-the grades in an int[] and use a method for each of the computations.  */
+/** 
+* Write a program called GradesStatistics, which reads in n grades 
+* (of int between 0 and 100, inclusive) and displays the average, minimum, maximum, 
+* and standard deviation. Your program shall check for valid input. You should keep 
+* the grades in an int[] and use a method for each of the computations.
+*/
 
 import java.util.Scanner;
 
@@ -9,7 +11,9 @@ class e1gradestatistics {
 	
 	public static int[] grades; // static field
 	
-	// static methods below, to access the static field above.
+	/**
+	* static methods below, to access the static field above.
+	*/
 	
 	public static double average() {
 		if (grades.length == 0) {
@@ -29,8 +33,10 @@ class e1gradestatistics {
 			int max = grades[0];
 			for (int i=0;i<=grades.length-1;i++) {
 				max = (max<grades[i]) ? grades[i] : max;
-				// if (max<grades[i]), then let max=grades[i],
-				// else, no change.
+				/**
+				* if (max<grades[i]), then let max=grades[i],
+				* else, no change.
+				*/
 			} return max;
 		}
 	}
@@ -82,5 +88,4 @@ class e1gradestatistics {
 		System.out.println("The maximum is " + max());
 		System.out.println("The standard deviation is " + stdDev());
 	}
-	
 }

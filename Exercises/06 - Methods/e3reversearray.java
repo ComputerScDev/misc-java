@@ -1,3 +1,18 @@
+/**
+* Write a method called reverseArray() with the following signature:
+* public static void reverseArray(int[] intArray)
+* 
+* The method accepts an int array, and reverses its orders. 
+* For example, if the input array is {12, 56, 34, 79, 26}, the reversal 
+* is {26, 79, 34, 56, 12}. You MUST NOT use another array in your method 
+* (but you need a temporary variable to do the swap). Also write a test class 
+* called ReverseArrayTest to test this method.
+* 
+* Take note that the array passed into the method can be modified by the method 
+* (this is called "pass by reference"). On the other hand, primitives passed into 
+* a method cannot be modified. This is because a clone is created and passed into 
+* the method instead of the original copy (this is called "pass by value"). 
+*/
 import java.util.Scanner;
 
 class e3reversearray {
@@ -30,24 +45,7 @@ class e3reversearray {
 			}
 		}
 	}
-	
 }
-
-
-/* Write a method called reverseArray() with the following signature:
-
-public static void reverseArray(int[] intArray)
-
-The method accepts an int array, and reverses its orders. 
-For example, if the input array is {12, 56, 34, 79, 26}, the reversal 
-is {26, 79, 34, 56, 12}. You MUST NOT use another array in your method 
-(but you need a temporary variable to do the swap). Also write a test class 
-called ReverseArrayTest to test this method.
-
-Take note that the array passed into the method can be modified by the method 
-(this is called "pass by reference"). On the other hand, primitives passed into 
-a method cannot be modified. This is because a clone is created and passed into 
-the method instead of the original copy (this is called "pass by value"). */
 
 /* Sample input/output:
 input data:
