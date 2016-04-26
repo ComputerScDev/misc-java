@@ -1,17 +1,18 @@
-/*  write a Matrix library that supports matrix operations 
- (such as addition, subtraction, multiplication) via 2D arrays. 
- The operations shall support both doubles and ints. 
- Also write a test class to exercise all the operations programmed. 
- 
- Double values are also supported. For double inputs, edit the main 
- method such that the int[][] values become double[][] values.*/
+/**
+* write a Matrix library that supports matrix operations 
+* (such as addition, subtraction, multiplication) via 2D arrays. 
+* The operations shall support both doubles and ints. 
+* Also write a test class to exercise all the operations programmed. 
+* 
+* Double values are also supported. For double inputs, edit the main 
+* method such that the int[][] values become double[][] values.
+*/
 
 import java.util.Scanner;
 
 class e1matrix {
 	
 	public static void printMatrix(int[][] matrix) {
-		
 		for (int[] row : matrix) {
 			for (int entry : row) {
 				System.out.print(entry+" ");
@@ -21,7 +22,6 @@ class e1matrix {
 	}
 	
 	public static void printMatrix(double[][] matrix) {
-		
 		for (double[] row : matrix) {
 			for (double entry : row) {
 				System.out.print(entry+" ");
@@ -33,7 +33,6 @@ class e1matrix {
 	public static boolean haveSameDim(int[][] matrix1, int[][] matrix2) {
 		if (matrix1.length == matrix2.length) {
 			for (int i=0; i<matrix1.length; i++) {
-				
 				if (matrix1[i].length == matrix2[i].length) {
 					continue;
 				} else {
@@ -41,7 +40,6 @@ class e1matrix {
 				}
 			}
 			return true;
-			
 		} else {
 			return false;
 		}
@@ -49,122 +47,94 @@ class e1matrix {
 	}
 	
 	public static boolean haveSameDim(double[][] matrix1, double[][] matrix2) {
-		
 		if (matrix1.length == matrix2.length) {
 			for (int i=0; i<matrix1.length; i++) {
-				
 				if (matrix1[i].length == matrix2[i].length) {
 					continue;
 				} else {
 					return false;
 				}
-				
 			}
 			return true;
 			
 		} else {
 			return false;
 		}
-		
 	}
 	
 	public static int[][] add(int[][] matrix1, int[][] matrix2) {
-		
 		int[][] matrixSum = new int[matrix1.length][];
 		
 		for (int i=0; i<matrixSum.length; i++) {
 			matrixSum[i] = matrix1[i].clone();
-			
 			for (int j=0; j<matrixSum[i].length; j++) {
 				matrixSum[i][j] += matrix2[i][j];
 			}
-			
 		}
 		return matrixSum;
-		
 	}
 	
 	public static double[][] add(double[][] matrix1, double[][] matrix2) {
-		
 		double[][] matrixSum = new double[matrix1.length][];
 		
 		for (int i=0; i<matrixSum.length; i++) {
 			matrixSum[i] = matrix1[i].clone();
-			
 			for (int j=0; j<matrixSum[i].length; j++) {
 				matrixSum[i][j] += matrix2[i][j];
 			}
-			
 		}
 		return matrixSum;
-		
 	}
 	
 	public static int[][] subtract(int[][] matrix1, int[][] matrix2) {
-		
 		int[][] matrixDiff = new int[matrix1.length][];
 		
 		for (int i=0; i<matrixDiff.length; i++) {
 			matrixDiff[i] = matrix1[i].clone();
-			
 			for (int j=0; j<matrixDiff[i].length; j++) {
 				matrixDiff[i][j] -= matrix2[i][j];
 			}
-			
 		}
 		return matrixDiff;
-		
 	}
 	
 	public static double[][] subtract(double[][] matrix1, double[][] matrix2) {
-		
 		double[][] matrixDiff = new double[matrix1.length][];
 		
 		for (int i=0; i<matrixDiff.length; i++) {
 			matrixDiff[i] = matrix1[i].clone();
-			
 			for (int j=0; j<matrixDiff[i].length; j++) {
 				matrixDiff[i][j] += matrix2[i][j];
 			}
-			
 		} 
 		return matrixDiff;
-		
 	}
 	
 	public static int[][] multiply(int[][] matrix1, int[][] matrix2) {
-		
 		int[][] matrixProduct = new int[matrix1.length][matrix2[0].length];
 		
 		for (int i=0; i<matrixProduct.length; i++) {
 			for (int j=0; j<matrixProduct[i].length; j++) {
-				
 				matrixProduct[i][j] = 1;
 				for (int k=0; k<matrix1[0].length; k++) {
 					matrixProduct[i][j] *= (matrix1[i][k]*matrix2[k][j]);
 				}
-				
 			}
 		} 
 		return matrixProduct;	
-		
 	}
 	
 	public static double[][] multiply(double[][] matrix1, double[][] matrix2) {
-		
 		double[][] matrixProduct = new double[matrix1.length][matrix2[0].length];
 		
 		for (int i=0; i<matrixProduct.length; i++) {
 			for (int j=0; j<matrixProduct[i].length; j++) {
-				
 				matrixProduct[i][j] = 1;
 				for (int k=0; k<matrix1[0].length; k++) {
 					matrixProduct[i][j] *= (matrix1[i][k]*matrix2[k][j]);
 				}
-				
 			}
 		} return matrixProduct;	
-		
 	}
 	
 	public static void main(String[] args) {
@@ -223,8 +193,6 @@ class e1matrix {
 			System.out.println("Difference:");
 			int[][] matrix4 = e1matrix.subtract(matrix1, matrix2);
 			e1matrix.printMatrix(matrix4);
-			
-		
 		} else {
 			System.out.println();
 			System.out.println("Invalid dimensions for sums and differences.");
@@ -237,12 +205,10 @@ class e1matrix {
 			
 			for (int i=0; i<matrix5.length; i++) {
 				for (int j=0; j<matrix5[0].length; j++) {
-					
 					System.out.print(matrix5[i][j] + " ");
 					if (j == matrix5[0].length-1) {
 						System.out.println();
 					}
-					
 				}
 			}
 		} else {
@@ -250,5 +216,4 @@ class e1matrix {
 			System.out.println("Matrix 1 column dimension must equal Matrix 2 row dimension.");
 		}
 	}
-	
 }

@@ -1,13 +1,15 @@
-/* Write a program called PrintAnimalPattern, 
-which uses println() or printf() to produce this pattern:
-
-          '__'
-          (©©)
-  /========\/
- / || %% ||
-*  ||----||
-   ¥¥    ¥¥
-   ""    "" */
+/**
+* Write a program called PrintAnimalPattern, 
+* which uses println() or printf() to produce this pattern:
+* 
+*           '__'
+*           (©©)
+*   /========\/
+*  / || %% ||
+* *  ||----||
+*    ¥¥    ¥¥
+*    ""    "" 
+*/
 
 class e2printanimalpattern {
 	
@@ -25,5 +27,4 @@ class e2printanimalpattern {
 	public static void main(String[] args) {
 		printAnimal();
 	}
-	
 }
