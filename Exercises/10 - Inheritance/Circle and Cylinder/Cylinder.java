@@ -5,7 +5,7 @@ public class Cylinder extends Circle {
 	
 	/**
 	 * constructors
-	 * /
+	 */
 	public Cylinder() {
 		super();	// invokes superclass' no-arg constructor
 		height = DEFAULT_HEIGHT;
@@ -23,7 +23,7 @@ public class Cylinder extends Circle {
 	
 	/**
 	 * public methods
-	 * /
+	 */
 	public double getHeight() {
 		return height;
 	}
