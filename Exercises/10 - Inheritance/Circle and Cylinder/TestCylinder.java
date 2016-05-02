@@ -1,5 +1,6 @@
-//	Test method for Cylinder subclass of Circle superclass
-
+/**
+ * Test method for Cylinder subclass of Circle superclass
+ */ 
 public class TestCylinder {
 	
 	public static void main(String[] args) {
