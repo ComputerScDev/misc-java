@@ -1,18 +1,3 @@
-/** 
-* 2D Point model class
-* 	-x:float = 0.0f
-* 	-y:float = 0.0f
-* 	+Point2D(x:float, y:float)
-* 	+Point2D()
-* 	+getX():float
-* 	+getY():float
-* 	+getXY():float[2]
-* 	+setX(x:float):void
-* 	+setY(y:float):void
-* 	+setXY(x:float, y:float):void
-* 	+toString():String
-*/ 
-
 public class Point2D {
 	
 	/**
