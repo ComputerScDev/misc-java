@@ -1,7 +1,7 @@
 # misc-java
-Miscellaneous Java code (beginner to intermediate level).
+Miscellaneous Java code for learning purposes.
 
-exercises from: 
+exercises taken from: 
 
 www3.ntu.edu.sg/home/ehchua/programming/
 
